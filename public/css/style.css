@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.background-header{
+    background-image: url("../image/zee-header-banner-2.jpg");
+    height: 100vh;
+    background-size: left;
+}
+hr { 
+    display: block;
+    margin-top: 0.3em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.3px;
+    color: grey;
+  } 
+  .color-about-p{
+      color: lightgray;
+  }
+  .h1-ABOUT{
+    color: darkgray;
+    font-size: 4.5rem;
+    line-height:4.3rem;
+  }
