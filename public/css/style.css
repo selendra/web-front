@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 71.42%;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+}
+
+/*header */
+.home-bg-image {
+  background-image: url("../image/zee-landing.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header-text-box {
+  position: absolute;
+  font-size: 2rem;
+  left: 45%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.header-main-1,
+.header-main-2 {
+  display: inline-block;
+  color: #fff;
+}
+
+.header-main-1 {
+  width: 50rem;
+  font-weight: 900;
+  line-height: 1.2;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.header-main-2 {
+  width: 50rem;
+  font-size: 1.7rem;
+  font-weight: 100;
+  word-spacing: 3px;
+  margin-bottom: 2rem;
+}
+.header-menu {
+  padding-top: 5rem;
+}
+.menu-item {
+  margin: 0 auto !important;
+}
+.menu-item .item:not(:last-child) {
+  margin: 0 1.2rem !important;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.menu-item .item:last-child {
+  font-size: 1.5rem;
+  color: white;
+}
+.menu-item-form .item {
+  margin: 0 !important;
+}
+.learn-more {
+  color: #fff;
+}
+
+.learn-more-word {
+  border-bottom: 1px #fff solid;
+  margin-right: 2rem;
+}
+/* Recently Project */
+.recently-container {
+  padding: 30vh 0;
+  width: 100vw;
+  background-color: #fff;
+}
