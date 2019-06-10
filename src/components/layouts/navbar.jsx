@@ -4,7 +4,11 @@ const Navbar = () => {
   return (
     <div className="ui secondary stackable  menu container  header-menu">
       <Link to="/">
-        <img src="image/zeetomic-logo-header.png" alt="zeetomic" />
+        <img
+          className="menu-logo"
+          src="image/zeetomic-logo-header.png"
+          alt="zeetomic"
+        />
       </Link>
       <div className="left menu menu-item">
         <NavLink to="/invest" className="item" activeClassName="active">

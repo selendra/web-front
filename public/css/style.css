@@ -34,10 +34,10 @@ body {
 .header-main-2 {
   display: inline-block;
   color: #fff;
+  width: 50rem;
 }
 
 .header-main-1 {
-  width: 50rem;
   font-weight: 900;
   line-height: 1.2;
   font-size: 4rem;
@@ -46,15 +46,15 @@ body {
 }
 
 .header-main-2 {
-  width: 50rem;
   font-size: 1.7rem;
-  font-weight: 100;
   word-spacing: 3px;
   margin-bottom: 2rem;
 }
 .header-menu {
   padding-top: 5rem;
+  position: relative;
 }
+
 .menu-item {
   margin: 0 auto !important;
 }
@@ -70,6 +70,10 @@ body {
 .menu-item-form .item {
   margin: 0 !important;
 }
+.menu-logo {
+  width: 22rem;
+  padding-left: 1rem;
+}
 .learn-more {
   color: #fff;
 }
@@ -80,7 +84,78 @@ body {
 }
 /* Recently Project */
 .recently-container {
-  padding: 30vh 0;
+  padding: 12vh 0 12vh 0;
   width: 100vw;
   background-color: #fff;
+}
+.recently-header {
+  margin-bottom: 10vh;
+  font-size: 3rem;
+}
+.recently-header div {
+  word-spacing: 0.5rem;
+  color: #545252 !important;
+}
+.card-style {
+  box-shadow: none !important;
+  margin: 0rem 2rem !important;
+  overflow: hidden;
+}
+.card-image-background {
+  background-image: "../image/bg-cont.jpg";
+  background-color: lightgrey;
+  background-image: url("../image/bg-cont.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.description-style {
+  padding: 4rem 0;
+  font-size: 1.5rem;
+}
+.description-sub {
+  line-height: 1.7;
+}
+/* slide show. */
+.column-box {
+  position: relative;
+}
+.column-text-box {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.column-text-box {
+  padding: 5rem 0;
+}
+.slide-content {
+  width: 100%;
+  padding: 5vh 0;
+  background-image: url("../image/bg-cont.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* invest */
+.invest-container {
+  box-sizing: border-box;
+  background-image: url("../image/zee-header-banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.invest-text-container {
+  padding: 50vh 0;
+}
+/* footer */
+.footer-container {
+  text-align: center;
+  background: #ece7e7;
+  width: 100%;
+  padding: 10vh 0;
+}
+.footer-inner-container > * {
+  margin: 2rem 0;
 }
