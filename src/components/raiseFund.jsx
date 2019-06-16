@@ -66,25 +66,6 @@ class Raisfund extends Component {
           <h1 className="ui header center aligned h1-apply">How to Apply</h1>
           <div className="ui  divided list">
             <Accordion />
-            {/* <div className="item">
-              <h2 onClick={this.toggleHandler} className="h2-style">
-                What exactly are cryptocurrencies?
-              </h2>
-              {this.state.showfaq === true ? (
-                <div>
-                  <p>{this.state.FAQ[1].faq}</p>
-                </div>
-              ) : null}
-            </div> */}
-            {/*<div className="item">
-              <h2 className="h2-style">Why am I getting Zeeva?</h2>
-            </div>
-            <div className="item">
-              <h2 className="h2-style">How can I use my Zeeva?</h2>
-            </div>*/}
-            {/* <div className="item">
-              <h2 className="h2-style">Can I exchange Zeeva</h2>
-            </div> */}
           </div>
         </div>
       </React.Fragment>
