@@ -14,7 +14,7 @@ export class slideshow extends Component {
       {
         _id: 1002,
         number: 2,
-        image: "./image/step-1.png",
+        image: "./image/slide-img-1.png ",
         header: "How it works",
         descr:
           "the agreement between the owner of property with Zeeva's curator"
@@ -22,7 +22,7 @@ export class slideshow extends Component {
       {
         _id: 1003,
         number: 3,
-        image: "./image/step-1.png",
+        image: "./image/slide-image-2.png",
         header: "How it works",
         descr:
           "the agreement between the owner of property with Zeeva's curator"
@@ -30,7 +30,7 @@ export class slideshow extends Component {
       {
         _id: 1004,
         number: 4,
-        image: "./image/step-1.png",
+        image: "./image/slide-image-3.png",
         header: "How it works",
         descr:
           "the agreement between the owner of property with Zeeva's curator"
@@ -47,46 +47,57 @@ export class slideshow extends Component {
     const settings = {
       slidesToShow: 1,
       slidesToScroll: 1,
-      infinite: true
-      // dots: true,
+      infinite: true,
+      className: "slide-container",
+      centerPadding: true
+
       // autoplay: true,
-      // autoplaySpeed: 2000,
-      // arrows: true
+      // autoplaySpeed: 3000
     };
-    // const { id, number, image, header, descr } = this.state.slide_data;
     return (
       <React.Fragment>
-        <div className="ui fluid container">
+        <div className="ui fluid container slide-container">
+          <div className="btn-mv-left" onClick={this.prev}>
+            <img src="./image/left-arrow.png" alt="" />
+          </div>
           <Slider ref={slider => (this.slider = slider)} {...settings}>
             {this.state.slide_data.map(info => (
               <div key={info._id} className="slide-content">
-                <div className="ui button" onClick={this.prev}>
-                  Previous
-                </div>
-                <div className="ui stackable  grid container">
-                  <div className="eight wide column">
-                    <img
-                      className="ui large image"
-                      src={info.image}
-                      alt="it's so easy"
-                    />
-                  </div>
-                  <div className="eight wide column column-box">
-                    <div className="column-text-box">
-                      <div className="ui  header">{info.header}</div>
-                      <div className="ui massive  circular label">
-                        <div className="ui  header">{info.number}</div>
+                <div>
+                  <div className="ui stackable  grid container">
+                    <div className="eight wide column">
+                      <img
+                        style={{ margin: "auto", marginTop: "1rem" }}
+                        className="ui medium image image-large"
+                        src={info.image}
+                        alt="it's so easy"
+                      />
+                    </div>
+                    <div className="eight wide column slide-content-container">
+                      <div className="slide-content-box">
+                        <center>
+                          <div className="ui header slide-content-header">
+                            {info.header}
+                          </div>
+                          <div className="ui massive  circular label">
+                            <div className="ui  header slide-content-label">
+                              {info.number}
+                            </div>
+                          </div>
+                          <div className="slide-content-description">
+                            {info.descr}
+                          </div>
+                        </center>
                       </div>
-                      <div className="description">{info.descr}</div>
                     </div>
                   </div>
-                </div>
-                <div className="ui button" onClick={this.next}>
-                  Next
                 </div>
               </div>
             ))}
           </Slider>
+          <div className="btn-mv-right" onClick={this.next}>
+            <img src="./image/right-arrow.png" alt="" />
+          </div>
         </div>
       </React.Fragment>
     );

@@ -1,10 +1,49 @@
 import React, { Component } from "react";
 import Navbar from "./layouts/navbar";
 import { Link } from "react-router-dom";
-import Card from "./cards";
 import Slideview from "./slideshow";
 import Footer from "./layouts/footer";
 
+const card = (id, image, header, descr) => {
+  return (
+    <div key={id} className="card card-style">
+      <div className="card-image-background">
+        <center>
+          <div className="image">
+            <img
+              className="ui medium image"
+              src={image}
+              alt="vitamin-air"
+              srcSet=""
+            />
+          </div>
+        </center>
+      </div>
+      <div className="description center aligned description-style">
+        <div className="ui medium grey header">{header}</div>
+        <div className="description-sub">{descr}</div>
+      </div>
+    </div>
+  );
+};
+const cards = (id, image, header, descr) => {
+  return (
+    <div key={id} className="card card-style">
+      <div className="image">
+        <img
+          className="ui medium image"
+          src={image}
+          alt="vitamin-air"
+          srcSet=""
+        />
+      </div>
+      <div className="description center aligned description-style">
+        <div className="ui medium grey header">{header}</div>
+        <div className="description-sub">{descr}</div>
+      </div>
+    </div>
+  );
+};
 class home extends Component {
   state = {
     recently_data: [
@@ -13,54 +52,55 @@ class home extends Component {
         image: "./image/vitamin-air.png",
         header: "Community Incentivise Platform Base on Smart Contract",
         descr:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis deleniti, quisquam dolorum vel nemo, soluta nihil, non praesentium illum veritatis? ."
+          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier, safer."
       },
       {
         _id: 1001,
         image: "./image/vitamin-air-v.png",
-        header: "Community Incentivise Platform Base on Smart Contract",
+        header: "Decentralized Internet Sharing",
         descr:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis deleniti, quisquam dolorum vel nemo, soluta nihil, non praesentium illum veritatis? ."
+          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       },
       {
         _id: 1002,
         image: "./image/crypto.png",
-        header: "Community Incentivise Platform Base on Smart Contract",
+        header: "ISO Listing and Trading",
         descr:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis deleniti, quisquam dolorum vel nemo, soluta nihil, non praesentium illum veritatis? ."
+          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       }
     ],
     updates_data: [
       {
         _id: 1000,
-        image: "./image/vitamin-air.png",
+        image: "./image/city.jpg",
         header: "Community Incentivise Platform Base on Smart Contract",
         descr:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis deleniti, quisquam dolorum vel nemo, soluta nihil, non praesentium illum veritatis? ."
+          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       },
       {
         _id: 1001,
-        image: "./image/vitamin-air-v.png",
-        header: "Community Incentivise Platform Base on Smart Contract",
+        image: "./image/city-1.jpg",
+        header: "Decentralized Internet Sharing",
         descr:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis deleniti, quisquam dolorum vel nemo, soluta nihil, non praesentium illum veritatis? ."
+          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       },
       {
         _id: 1002,
-        image: "./image/crypto.png",
-        header: "Community Incentivise Platform Base on Smart Contract",
+        image: "./image/city-2.jpg",
+        header: "ISO Listing and Trading",
         descr:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis deleniti, quisquam dolorum vel nemo, soluta nihil, non praesentium illum veritatis? ."
+          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       }
     ]
   };
+
   render() {
     return (
       <React.Fragment>
         <div className="home-bg-image">
-          <div className="ui container">
-            <Navbar />
-            <div className="header-text-box">
+          <div className="ui container ">
+            <Navbar sidevalue={this.state.slidebar} open={this.opensidebar} />
+            <div className="ui text container header-text-box">
               <div className="header-main">
                 <span className="header-main-1">
                   Decentralzed Platform Empowering Community Enconomic
@@ -82,10 +122,15 @@ class home extends Component {
           <div className="recently-header">
             <div className="ui centered  header">Recently Projects</div>
           </div>
-          <div className="ui  centered five stackable cards">
-            {this.state.recently_data.map(property => (
-              <Card key={property._id} property={property} />
-            ))}
+          <div className="ui  centered five stackable cards card-container">
+            {this.state.recently_data.map(property =>
+              card(
+                property._id,
+                property.image,
+                property.header,
+                property.descr
+              )
+            )}
           </div>
         </div>
         <Slideview />
@@ -93,10 +138,10 @@ class home extends Component {
           <div className="recently-header">
             <div className="ui centered  header">Recently Updates</div>
           </div>
-          <div className="ui  centered five stackable cards">
-            {this.state.recently_data.map(property => (
-              <Card key={property._id} property={property} />
-            ))}
+          <div className="ui  centered five stackable cards card-container">
+            {this.state.updates_data.map(value =>
+              cards(value._id, value.image, value.header, value.descr)
+            )}
           </div>
         </div>
         <Footer />
