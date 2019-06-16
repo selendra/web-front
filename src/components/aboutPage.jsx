@@ -70,51 +70,49 @@ const About = () => {
         </div>
       </div>
       {/*state componnent */}
-      {/* <Member /> */}
-      <div className="background-under-header-1">
+      <Member />
+      {/* <div className="background-under-header-1">
         <div className="ui container">
           <h1 className="memberTitle">Our People</h1>
           <div className="ui grid">
-            <div className="doubling five column row">
+            <div className="doubling three column row">
               <div className="ui column">
-                <img
-                  className="ui small circular image image-style"
-                  src="image/bro-1.jpg"
-                  alt=""
-                />
+                <center>
+                  <img
+                    className="ui small circular image image-style"
+                    src="image/bro-3.jpg"
+                    alt=""
+                  />
+                  <h3 className="memberName">Saing Sab</h3>
+                  <p className="memberPosition">Kernel Developer</p>
+                </center>
               </div>
               <div className="ui column">
-                <img
-                  className="ui small circular image image-style"
-                  src="image/bro-3.jpg"
-                  alt=""
-                />
+                <center>
+                  <img
+                    className="ui small circular image image-style"
+                    src="image/bro-2.jpg"
+                    alt=""
+                  />
+                  <h3 className="memberName">Rithy THUL</h3>
+                  <p className="memberPosition">PR and Partnership</p>
+                </center>
               </div>
               <div className="ui column">
-                <img
-                  className="ui small circular image image-style"
-                  src="image/bro-2.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="ui column">
-                <img
-                  className="ui small circular image image-style"
-                  src="image/bro-4.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="ui column">
-                <img
-                  className="ui small circular image image-style"
-                  src="image/bro-4.jpg"
-                  alt=""
-                />
+                <center>
+                  <img
+                    className="ui small circular image image-style"
+                    src="image/bro-4.jpg"
+                    alt=""
+                  />
+                  <h3 className="memberName">San Vuthy</h3>
+                  <p className="memberPosition">Full Stack Webdeveloper</p>
+                </center>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };

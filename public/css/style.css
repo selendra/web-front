@@ -89,6 +89,14 @@ hr {
   color: lightgray;
   padding: 59px;
 }
+.memberName {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+}
+.memberPosition {
+  color: rgb(158, 158, 158);
+  font-size: 18px;
+}
 
 .ui.small.circular.image.image-style {
   -webkit-filter: grayscale(100%);
@@ -211,7 +219,7 @@ hr {
 /*buuton*/
 .ui.button.btn {
   border-radius: 2rem;
-  background-color: #341f97;
+  background-color: #063e63;
   color: white;
   width: 15rem;
   font-size: 1.1rem;
