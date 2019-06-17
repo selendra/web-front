@@ -8,9 +8,7 @@ function footer() {
           <div className="footer-logo">
             <img src="./image/zeetomic-logo-footer.png" alt="" />
           </div>
-          <p
-            style={{ fontSize: "1.5rem", letterSpacing: "1px", color: "grey" }}
-          >
+          <p className="footer-text">
             Copyright &copy; 2018 Zeetomic. All right reserved.
             <br /> A brainchild of SmallWorld Venture
           </p>

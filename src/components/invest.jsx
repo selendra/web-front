@@ -25,8 +25,8 @@ const invest = () => {
                     <div className="column">
                       <div className="image">
                         <img
-                          className="ui small circular  image invest-image"
-                          src="./image/sample-project-photo.jpg"
+                          className="ui tiny circular image invest-image"
+                          src="./image/rocket.jpeg"
                           alt=""
                         />
                       </div>
@@ -100,6 +100,7 @@ const invest = () => {
                     <a href="https://www.youtube.com">
                       <i className="ui blue circular large normal icon">
                         <img
+                          className="footer-icon-style"
                           src="./image/micon.png"
                           alt="this is medium icon footer-icon-style "
                         />
@@ -127,37 +128,29 @@ const invest = () => {
             About Project
           </div>
           <div className="ui centered stackable grid container">
-            <div
-              style={{ margin: "auto", overflowWrap: "break-word" }}
-              className="six wide column"
-            >
-              <div className="ui text container">
-                <p style={{ overflowWrap: "break-word !important" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  voluptatibus dolor necessitatibus nisi corrupti exercitationem
-                  ea, repellat magni magnam, inventore aliquid officiis ut sequi
-                  tempora sed rerum debitis, perspiciatis libero.Nihil ipsa
-                  fugiat aliquam aperiam omnis voluptas odit nesciunt? Et
-                  doloribus molestiae accusantium quam nulla beatae unde ratione
-                  consectetur cumque esse ipsum autem, illo vero adipisci,
-                  dolorum, veniam velit numquam! lore
-                </p>
-              </div>
-              <p />
-              <div className="ui text container">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  voluptatibus dolor necessitatibus nisi corrupti exercitationem
-                  ea, repellat magni magnam, inventore aliquid officiis ut sequi
-                  tempora sed rerum debitis, perspiciatis libero.Nihil ipsa
-                  fugiat aliquam aperiam omnis voluptas odit nesciunt? Et
-                  doloribus molestiae accusantium quam nulla beatae unde ratione
-                  consectetur cumque esse ipsum autem, illo vero adipisci,
-                  dolorum, veniam velit numquam! lore
-                </p>
-              </div>
+            <div className="six wide column ">
+              <p>
+                A purpose-built student accommodation(PBSA) block in Nottingham,
+                UK ocntaining 124 student apartments is currently available for
+                investment on the Smartlands Platform. Nottingham hosts tow
+                universities one of which (Nottingham Trent University) is
+                within a a short walk to the property. The apartments are
+                studios with en-suit bathroom that are in high demand.
+                Construction of the property completed in Q3 2018 and it is
+                fully occupied for this academic year.
+              </p>
+              <p>
+                Purpose-built Student Accommodation is trandiionally a strong
+                and stable investment and, in this case, provides both divided
+                income (over 6% expected per year) and capital growth.
+                Nottingham has two top tier universities and has significant
+                demand for student Accommodation it is expected to wishstand the
+                effects of Brexit volatilly due to its strong academic
+                performance and global status, which means it will likely
+                contiue to attract student from both the UK and abroad.
+              </p>
             </div>
-            <div className="six wide column">
+            <div className="ten wide column">
               <div className="ui image">
                 <img
                   className="ui massive image"

@@ -20,7 +20,9 @@ const card = (id, image, header, descr) => {
         </center>
       </div>
       <div className="description center aligned description-style">
-        <div className="ui medium grey header">{header}</div>
+        <div className="ui medium grey header description-style-header">
+          {header}
+        </div>
         <div className="description-sub">{descr}</div>
       </div>
     </div>
@@ -38,7 +40,7 @@ const cards = (id, image, header, descr) => {
         />
       </div>
       <div className="description center aligned description-style">
-        <div className="ui medium grey header">{header}</div>
+        <div className="ui medium grey header header-update">{header}</div>
         <div className="description-sub">{descr}</div>
       </div>
     </div>
@@ -102,18 +104,18 @@ class home extends Component {
             <Navbar sidevalue={this.state.slidebar} open={this.opensidebar} />
             <div className="ui text container header-text-box">
               <div className="header-main">
-                <span className="header-main-1">
+                <h1 className="header-main-1">
                   Decentralzed Platform Empowering Community Enconomic
-                </span>
-                <span className="header-main-2">
+                </h1>
+                <h1 className="header-main-2">
                   The generation of highly scalable, autonomous-incentivized
                   platform base on decentralized network infrastructure that
                   empower the community economic.
-                </span>
+                </h1>
               </div>
-              <Link to="/learnmore" className="learn-more">
+              <Link to="/learnmore " className="learn-more">
                 <span className="learn-more-word">Learn More</span>
-                <span>&#10093;</span>
+                <span className="arrow-home">&#10093;</span>
               </Link>
             </div>
           </div>

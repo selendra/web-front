@@ -26,15 +26,21 @@ export class navbar extends Component {
             style={{}}
           >
             <Link to="/home" className="item">
-              <i className="ui big white home icon" />
+              <center>
+                <img
+                  className="ui tiny image"
+                  src="./image/zeetomic-logo-header.png"
+                  alt=""
+                />
+              </center>
             </Link>
             <Link to="/invest" className="item">
               Invest
             </Link>
-            <Link to="/raisedFund" className="item">
+            <Link to="/raiseFund" className="item">
               Raised Fund
             </Link>
-            <Link to="/about" className="item">
+            <Link to="/aboutPage" className="item">
               About
             </Link>
             <Link to="/blog" className="item">

@@ -49,10 +49,9 @@ export class slideshow extends Component {
       slidesToScroll: 1,
       infinite: true,
       className: "slide-container",
-      centerPadding: true
-
-      // autoplay: true,
-      // autoplaySpeed: 3000
+      centerPadding: true,
+      autoplay: true,
+      autoplaySpeed: 5000
     };
     return (
       <React.Fragment>
@@ -68,7 +67,7 @@ export class slideshow extends Component {
                     <div className="eight wide column">
                       <img
                         style={{ margin: "auto", marginTop: "1rem" }}
-                        className="ui medium image image-large"
+                        className="ui massive image image-large"
                         src={info.image}
                         alt="it's so easy"
                       />
