@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
 import { Link } from "react-router-dom";
+import Member from "./state/member";
 const invest = () => {
   return (
     <div>
@@ -85,26 +86,20 @@ const invest = () => {
                 <div className="six wide column">
                   <span className="text-invest-panel">SHARE ON</span>
                   <span className="footer-icons invest-icons">
-                    <a href="https://www.youtube.com">
+                    <a href="https://www.facebook.com/zeetomic">
                       <i
                         style={{ borderColor: "" }}
                         className="ui  circular large facebook f icon"
                       />
                     </a>
-                    <a href="https://www.youtube.com">
+                    <a href="https://t.me/zeetomic">
                       <i className="ui  circular large telegram plane icon" />
                     </a>
-                    <a href="https://www.youtube.com">
-                      <i className="ui  circular large twitter icon" />
+                    <a href="https://www.linkedin.com/company/zeetomic">
+                      <i className="ui  circular large linkedin icon" />
                     </a>
-                    <a href="https://www.youtube.com">
-                      <i className="ui blue circular large normal icon">
-                        <img
-                          className="footer-icon-style"
-                          src="./image/micon.png"
-                          alt="this is medium icon footer-icon-style "
-                        />
-                      </i>
+                    <a href="https://medium.com/zeetomic">
+                      <i className="ui  circular large medium m icon" />
                     </a>
                   </span>
                 </div>
@@ -128,7 +123,7 @@ const invest = () => {
             About Project
           </div>
           <div className="ui centered stackable grid container">
-            <div className="six wide column ">
+            <div className="six wide column about-column-style">
               <p>
                 A purpose-built student accommodation(PBSA) block in Nottingham,
                 UK ocntaining 124 student apartments is currently available for
@@ -161,7 +156,7 @@ const invest = () => {
             </div>
           </div>
         </div>
-
+        <Member />
         <Footer />
       </React.Fragment>
     </div>

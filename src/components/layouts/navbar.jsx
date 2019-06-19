@@ -15,7 +15,6 @@ export class navbar extends Component {
       <React.Fragment>
         <div
           className={this.state.toggleclick ? "phone-background-navbar" : ""}
-          onClick={this.setTogglestate}
         >
           <div
             className={
@@ -43,9 +42,9 @@ export class navbar extends Component {
             <Link to="/aboutPage" className="item">
               About
             </Link>
-            <Link to="/blog" className="item">
+            <NavLink to="/blog" className="item">
               Blog
-            </Link>
+            </NavLink>
             <Link to="/login" className="item">
               Login
             </Link>
@@ -57,7 +56,7 @@ export class navbar extends Component {
         <div className="navbar-menu">
           <div className="ui secondary  container menu mobile only mobile-menu">
             <div className="left menu">
-              <Link to="/home">
+              <Link to="/aboutPage">
                 <img
                   className="menu-logo"
                   src="./image/zeetomic-logo-header.png"
@@ -100,10 +99,10 @@ export class navbar extends Component {
             >
               Invest
             </NavLink>
-            <NavLink to="/raisedFund" className="item hoverlink">
+            <NavLink to="/raiseFund" className="item hoverlink">
               Raise Fund
             </NavLink>
-            <NavLink to="/about" className="item hoverlink">
+            <NavLink to="/aboutPage" className="item hoverlink">
               About
             </NavLink>
             <NavLink to="/blog" className="item hoverlink">

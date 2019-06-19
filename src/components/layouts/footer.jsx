@@ -14,25 +14,17 @@ function footer() {
           </p>
 
           <div className="footer-icons">
-            <a href="https://www.youtube.com">
-              <i
-                style={{ borderColor: "" }}
-                className="ui  circular large facebook f icon"
-              />
+            <a href="https://www.facebook.com/zeetomic">
+              <i className="ui  circular large facebook f icon" />
             </a>
-            <a href="https://www.youtube.com">
+            <a href="https://t.me/zeetomic">
               <i className="ui  circular large telegram plane icon" />
             </a>
-            <a href="https://www.youtube.com">
-              <i className="ui  circular large twitter icon" />
+            <a href="https://www.linkedin.com/company/zeetomic">
+              <i className="ui  circular large linkedin alternate icon" />
             </a>
-            <a href="https://www.youtube.com">
-              <i className="ui blue circular large normal icon">
-                <img
-                  src="./image/micon.png"
-                  alt="this is medium icon footer-icon-style "
-                />
-              </i>
+            <a href="https://medium.com/zeetomic">
+              <i className="ui circular  large  medium m icon" />
             </a>
           </div>
         </div>

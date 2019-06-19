@@ -14,7 +14,7 @@ export class slideshow extends Component {
       {
         _id: 1002,
         number: 2,
-        image: "./image/slide-img-1.png ",
+        image: "./image/step-1.png",
         header: "How it works",
         descr:
           "the agreement between the owner of property with Zeeva's curator"
@@ -22,7 +22,7 @@ export class slideshow extends Component {
       {
         _id: 1003,
         number: 3,
-        image: "./image/slide-image-2.png",
+        image: "./image/step-1.png",
         header: "How it works",
         descr:
           "the agreement between the owner of property with Zeeva's curator"
@@ -30,7 +30,7 @@ export class slideshow extends Component {
       {
         _id: 1004,
         number: 4,
-        image: "./image/slide-image-3.png",
+        image: "./image/step-1.png",
         header: "How it works",
         descr:
           "the agreement between the owner of property with Zeeva's curator"
@@ -51,7 +51,7 @@ export class slideshow extends Component {
       className: "slide-container",
       centerPadding: true,
       autoplay: true,
-      autoplaySpeed: 5000
+      autoplaySpeed: 10000
     };
     return (
       <React.Fragment>
@@ -62,31 +62,35 @@ export class slideshow extends Component {
           <Slider ref={slider => (this.slider = slider)} {...settings}>
             {this.state.slide_data.map(info => (
               <div key={info._id} className="slide-content">
-                <div>
-                  <div className="ui stackable  grid container">
-                    <div className="eight wide column">
-                      <img
-                        style={{ margin: "auto", marginTop: "1rem" }}
-                        className="ui massive image image-large"
-                        src={info.image}
-                        alt="it's so easy"
-                      />
+                <div className="ui container">
+                  <div className="ui stackable two column  grid">
+                    <div className="column">
+                      <center>
+                        <img
+                          // style={{ margin: "auto", marginTop: "1rem" }}
+                          className="ui image fluid imageSlide"
+                          src={info.image}
+                          alt="it's so easy"
+                        />
+                      </center>
                     </div>
-                    <div className="eight wide column slide-content-container">
-                      <div className="slide-content-box">
-                        <center>
-                          <div className="ui header slide-content-header">
-                            {info.header}
-                          </div>
-                          <div className="ui massive  circular label">
-                            <div className="ui  header slide-content-label">
-                              {info.number}
+                    <div className="column">
+                      <div className="slide-content-container">
+                        <div className="slide-content-box">
+                          <center>
+                            <div className="ui header slide-content-header">
+                              {info.header}
                             </div>
-                          </div>
-                          <div className="slide-content-description">
-                            {info.descr}
-                          </div>
-                        </center>
+                            <div className="ui massive  circular label">
+                              <div className="ui  header slide-content-label">
+                                {info.number}
+                              </div>
+                            </div>
+                            <div className="slide-content-description">
+                              {info.descr}
+                            </div>
+                          </center>
+                        </div>
                       </div>
                     </div>
                   </div>

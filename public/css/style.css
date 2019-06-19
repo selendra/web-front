@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +10,24 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   font-weight: 400;
   box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 600;
 }
 
 /*header */
 .home-bg-image {
   background-image: url("../image/zee-landing.jpg");
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -41,7 +52,7 @@ body {
 .header-main-1 {
   font-weight: 900;
   line-height: 1.2;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   letter-spacing: 2px;
 }
@@ -73,9 +84,11 @@ body {
   max-width: 300px;
   height: 100vh;
   transition: all 0.5s ease-in-out;
+  transition: all 0s ease-in-out;
 }
 .close {
   display: none;
+  transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .menu-item .item:not(:last-child) {
@@ -178,30 +191,34 @@ body {
   font-size: 4rem !important;
 }
 .slide-content-label {
-  font-size: 5rem !important;
   border-radius: 50%;
-  width: 8rem;
+  width: 40px;
   background: rgba(5, 146, 146, 0.938);
+  height: 40px;
+  color: #fff !important;
+  padding-top: 5px !important;
+}
+.ui.secondary.menu .active.item {
+  color: #fbf508 !important;
 }
 .slide-content-box {
   position: absolute;
   left: 30%;
   top: 50%;
-  transform: translate(-30%, -50%);
+  transform: translate(-30%, 0%);
 }
 .slide-content-container {
   margin: auto 0 !important;
 }
-.slide-content-box {
-  padding: 5rem 0;
-}
+
 .slide-content {
   width: 100%;
-  min-height: 70vh;
+  /* min-height: 70vh; */
   background-image: url("../image/bg-cont.jpg");
   background-size: cover;
   background-position: center;
 }
+
 /* invest */
 .description button {
   color: black;
@@ -320,9 +337,9 @@ body {
   background-color: #063e63;
 }
 
-.ui.visible.left.overlay.sidebar.hide {
+/* .ui.visible.left.overlay.sidebar.hide {
   visibility: hidden;
-}
+} */
 .phone-background-navbar {
   background-color: #272727a6;
   position: fixed;
@@ -335,10 +352,10 @@ body {
 .ui.visible.left.overlay.sidebar.slideIn {
   animation-name: slideIn;
   transition: all 0.2s;
+  transition: all 0.2s;
   animation-timing-function: ease-in;
   animation-duration: 0.2s;
   background-color: (0, 0, 0, 0.2);
-  backface-visibility: hidden;
 }
 @keyframes slideIn {
   0% {
@@ -374,138 +391,11 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 50%;
-  }
-  .footer-text {
-    font-size: 16px;
-  }
-  .about-project-header {
-    padding: 4vh 0 0 4vh !important;
-  }
-  .about-project {
-    padding: 4vh 0 !important;
-  }
-  .footer-icon-style {
-    width: 8px !important;
-  }
-  .slide-container {
-    border-radius: 1rem;
-    overflow: hidden !important;
-  }
-  .header-text-box {
-    left: 51%;
-    top: 30%;
-  }
-  .home-bg-image {
-    height: 70vh;
-  }
-  .slide-content {
-    min-height: 40vh;
-  }
-  .header-main-2 {
-    font-size: 2rem;
-  }
-  .learn-more-word {
-    font-size: 1.7rem;
-  }
-  .invest-container {
-    min-height: 50vh !important;
-  }
-  .learn-more:hover {
-    color: #f1c40f !important;
-  }
-}
-@media screen and(min-width: 768px ) and (max-width: 1023px) {
-  .header-text-box {
-    top: 40% !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  html {
-    font-size: 30%;
-  }
-  .card-image-background {
-    border-radius: 10px !important;
-  }
-  .description-sub {
-    font-size: 2.5rem;
-    font-family: "Roboto", sans-serif !important;
-    font-weight: 400;
-  }
-  .description-style-header,
-  .header-update {
-    font-size: 3rem !important;
-  }
-  .slide-content {
-    border-radius: 1rem;
-  }
-  .home-bg-image {
-    height: 100h;
-    background: #052a47 !important;
-  }
-  .header-text-box {
-    top: 28%;
-  }
-  .header-menu {
-    display: none !important;
-  }
-  .header-update {
-    font-size: 5rem;
-  }
-  .card-style {
-    margin: 0 auto !important;
-    height: auto;
-  }
-  .recently-container {
-    padding-top: 4vh;
-  }
-  .recently-header {
-    margin-bottom: 4vh;
-  }
-  .sidebar-style {
-    font-size: 2.5rem !important;
-  }
-  .slide-content {
-    min-height: 50vh;
-  }
-  .toggleicon {
-    margin-top: -6px;
-  }
-  .btn-mv-right,
-  .btn-mv-left {
-    display: none;
-  }
-  .header-main-1 {
-    font-size: 5rem;
-  }
-  .header-main-2 {
-    font-size: 2rem;
-  }
-  .navbar-menu {
-    display: block;
-    padding: 40px 0;
-  }
-  .header-text-box {
-    left: 50% !important;
-  }
-}
-@media screen and (max-width: 766px) {
-}
-@media screen and(max-width: 360px) {
-  .home-bg-image {
-    height: 50vh !important;
-  }
-  .slide-container {
-    height: 50vh !important;
-  }
-}
-/*bout page*/
+/*about page*/
 
 .background-header {
   background-image: url("../image/zee-header-banner-2.jpg");
-  height: 100vh;
+  min-height: 100vh;
   background-size: left;
 }
 
@@ -524,7 +414,10 @@ hr {
   color: lightgray;
   font-size: 1.5rem;
 }
-
+.about-column-main {
+  padding: 15% 0 !important;
+  font-size: 16px;
+}
 .h1-ABOUT {
   color: darkgray;
   font-size: 4.5rem;
@@ -533,18 +426,50 @@ hr {
 
 .background-under-header {
   background-image: url("../image/network-nest.png");
-  height: 50vh;
   /* background-size: 100% 100%, contain; */
-  background-size: 30%;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  background-repeat: no-repeat;
+  padding: 60px 0px;
+  margin: 30px;
 }
-
+.aboutPageContainer {
+  width: 70% !important;
+  margin: 0px auto;
+}
+.about-column-style p {
+  font-size: 16px;
+}
 .about-misson {
   line-height: 7rem;
   font-size: 3rem;
+}
+.about-mr-style {
+  margin: 20px 0;
+}
+.columnLeft {
+  text-align: right !important;
+}
+.columnRight {
+  text-align: left !important;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #a1a2a280;
+  position: relative;
+  top: -10px;
+}
+.circleRight {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #a1a2a280;
+  position: relative;
+  top: -10px;
+  float: right;
 }
 
 .about-p {
@@ -555,11 +480,6 @@ hr {
 .about-misson-1 {
   line-height: 35rem;
   font-size: 3rem;
-}
-
-.about-p-1 {
-  font-size: 1.5rem;
-  margin-top: -152px !important;
 }
 
 .background-under-header-1 {
@@ -576,7 +496,15 @@ hr {
   text-align: center;
   font-size: 4rem;
   color: lightgray;
-  padding: 59px;
+}
+.member-container {
+  padding: 10vh 0 5vh 0;
+}
+.member-column-style {
+  padding: 2rem 0;
+}
+.memberTitle {
+  padding: 0 0 5vh 0;
 }
 .memberName {
   color: rgba(0, 0, 0, 0.87);
@@ -596,7 +524,7 @@ hr {
 /*raisefund*/
 .background-rais {
   background-image: url("../image/zee-header-banner.jpg");
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 .a-submit {
@@ -662,7 +590,11 @@ hr {
 /*blog*/
 .blog-background-header {
   background-image: url("../image/zee-header-banner-2.jpg");
-  padding: 27vh 0 27vh 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
 }
@@ -670,8 +602,18 @@ hr {
   text-align: center;
   font-size: 7rem;
   color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
+.index-background h4 {
+  font-size: 16px !important;
+  color: cadetblue;
+}
+.index-description p {
+  color: grey;
+}
 .backgroundEvent {
   /* background-color: #e4e4e4; */
   /* padding: 0px 10px 10px 10px !important; */
@@ -686,6 +628,20 @@ hr {
 .backgroundEvent p {
   color: #616161;
 }
+
+figure img {
+  width: 100%;
+  display: none;
+}
+.content h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.content p {
+  font-size: 16px;
+  padding: 0 5vh;
+}
+
 .badge {
   background-color: #063e63;
   display: inline-block;
@@ -713,18 +669,230 @@ hr {
   width: 15rem;
   font-size: 1.1rem;
 }
-/* .btn-filled-orange {
-  background-color: #063e63;
-  color: white;
+/* @media query */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+  .footer-text {
+    font-size: 16px;
+  }
+  .about-project-header {
+    padding: 4vh 0 0 4vh !important;
+  }
+  .about-project {
+    padding: 4vh 0 !important;
+  }
+  .slide-container {
+    border-radius: 1rem;
+    overflow: hidden !important;
+  }
+  .header-text-box {
+    left: 51%;
+    top: 30%;
+  }
+  .home-bg-image {
+    height: 70vh;
+  }
+  .header-main-2 {
+    font-size: 2rem;
+  }
+  .learn-more-word {
+    font-size: 16px;
+  }
+  .invest-container {
+    min-height: 50vh !important;
+  }
+  .learn-more:hover {
+    color: #f1c40f !important;
+  }
 }
-.btn-lg {
-  padding: 10px 37.5px 10px 37.5px;
-  font-size: 1.2em;
+@media screen and (max-width: 1023px) {
+  .header-text-box {
+    top: 40%;
+  }
 }
-.btn-round {
-  border: 0;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 30%;
+  }
+  .imageSlide {
+    width: 50% !important;
+  }
+  .card-image-background {
+    border-radius: 10px !important;
+  }
+  .about-column-style p {
+    font-size: 16px !important;
+    padding: 0 2vh;
+  }
+  .footer-icons {
+    font-size: 10px !important;
+  }
+  .aboutPageContainer {
+    width: 100% !important;
+    margin: 0px auto;
+  }
+  .background-rais {
+    height: 50vh !important;
+  }
+  .h1-color-rais {
+    margin: 0 !important;
+  }
+  .h1-apply {
+    font-size: 5rem !important;
+  }
+  .h2-style {
+    font-size: 16px;
+  }
+  .p-color-rais {
+    font-size: 10px !important;
+  }
+  .margin-p {
+    font-size: 16px !important;
+  }
+  .columnLeft,
+  .columnRight {
+    text-align: center !important;
+  }
+  .columnLeft h2 {
+    font-size: 16px;
+  }
+  .columnRight h2 {
+    font-size: 16px;
+  }
+  .circle,
+  .circleRight {
+    display: none;
+  }
+  .content p {
+    padding: 0 2vh !important;
+  }
+  .description-sub {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .blog-background-header {
+    height: 50vh !important;
+  }
+  .sidebar-style a {
+    font-size: 16px;
+  }
+  .slide-content-label {
+    padding-top: 13px !important;
+  }
+  .blog {
+    top: 25%;
+  }
+  .description-style-header,
+  .header-update {
+    font-size: 3rem !important;
+  }
+  .home-bg-image {
+    height: 50vh;
+  }
+  .header-text-box {
+    top: 28%;
+  }
+  .header-menu {
+    display: none !important;
+  }
+  .header-update {
+    font-size: 5rem;
+  }
+  .card-style {
+    margin: 0 auto !important;
+    height: auto;
+  }
+  .recently-container {
+    padding-top: 4vh;
+  }
+  .recently-header {
+    margin-bottom: 4vh;
+  }
+  .sidebar-style {
+    font-size: 2.5rem !important;
+  }
+  .toggleicon {
+    margin-top: -6px;
+    width: 20px;
+  }
+  .btn-mv-right,
+  .btn-mv-left {
+    display: none;
+  }
+  .header-main-1 {
+    font-size: 17px !important;
+  }
+  .header-main-2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .navbar-menu {
+    display: block;
+    padding: 40px 0;
+  }
+  .header-text-box {
+    left: 50%;
+  }
+  .slide-content {
+    height: 85vw !important;
+    padding: 30px 0px;
+  }
+  .slide-content-box {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-30%, 0%);
+  }
+  .slide-content-description {
+    font-size: 3rem !important;
+    padding: 0 !important;
+  }
+  .text-grey {
+    font-size: 16px !important;
+  }
+  .invest-main-header {
+    font-size: 20px !important;
+  }
+  .invest-icons {
+    font-size: 10px !important;
+  }
+  .description button {
+    font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 766px) {
+  .header-text-box {
+    left: 35% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-text-box {
+    left: 36% !important;
+  }
+  .header-main-1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header-text-box {
+    left: 35% !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header-text-box {
+    left: 45% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-bg-image div.header-text-box {
+    left: 52% !important;
+  }
+}
+/* @media screen and(max-width: 360px) {
+  .home-bg-image {
+    height: 50vh !important;
+  }
 } */

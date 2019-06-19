@@ -4,21 +4,19 @@ import { Link } from "react-router-dom";
 import Slideview from "./slideshow";
 import Footer from "./layouts/footer";
 
-const card = (id, image, header, descr) => {
+const card = (image, header, descr) => {
   return (
-    <div key={id} className="card card-style">
-      <div className="card-image-background">
-        <center>
-          <div className="image">
-            <img
-              className="ui medium image"
-              src={image}
-              alt="vitamin-air"
-              srcSet=""
-            />
-          </div>
-        </center>
-      </div>
+    <div className="card card-style">
+      <center>
+        <div className="card-image-background">
+          <img
+            className="ui medium image"
+            src={image}
+            alt="vitamin-air"
+            srcSet=""
+          />
+        </div>
+      </center>
       <div className="description center aligned description-style">
         <div className="ui medium grey header description-style-header">
           {header}
@@ -46,6 +44,7 @@ const cards = (id, image, header, descr) => {
     </div>
   );
 };
+
 class home extends Component {
   state = {
     recently_data: [
@@ -125,14 +124,11 @@ class home extends Component {
             <div className="ui centered  header">Recently Projects</div>
           </div>
           <div className="ui  centered five stackable cards card-container">
-            {this.state.recently_data.map(property =>
-              card(
-                property._id,
-                property.image,
-                property.header,
-                property.descr
-              )
-            )}
+            {this.state.recently_data.map(property => (
+              <React.Fragment key={property._id}>
+                {card(property.image, property.header, property.descr)}
+              </React.Fragment>
+            ))}
           </div>
         </div>
         <Slideview />

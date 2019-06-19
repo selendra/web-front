@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Accordion from "./accordion";
+import Navbar from "./layouts/navbar";
+import Footer from "./layouts/footer";
 class Raisfund extends Component {
   state = {
     FAQ: [
@@ -40,6 +42,7 @@ class Raisfund extends Component {
     return (
       <React.Fragment>
         <div className="background-rais">
+          <Navbar />
           <div className="padding-all-letter">
             <div>
               <h1 className="ui center aligned header text container h1-color-rais">
@@ -49,15 +52,15 @@ class Raisfund extends Component {
                 <p className="p-color-rais">
                   Discover security tokens - regulated financial instrument
                 </p>
-                <p className="p-color-rais1">on blockchain</p>
+                <p className="p-color-rais">on blockchain</p>
               </div>
             </div>
             <div className="ui center aligned container margin-top-2">
               <button className="ui massive primary button">Raise Now</button>
-              <p className="margin-p1">or</p>
+              {/* <p className="margin-p1">or</p>
               <a className="a-submit" href="#">
                 Submit
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -68,6 +71,7 @@ class Raisfund extends Component {
             <Accordion />
           </div>
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

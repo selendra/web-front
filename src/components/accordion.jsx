@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Accordion, Icon } from "semantic-ui-react";
+import { Accordion } from "semantic-ui-react";
 
 export default class AccordionExampleStandard extends Component {
   state = { activeIndex: 0 };
@@ -112,17 +112,6 @@ export default class AccordionExampleStandard extends Component {
             compatible with their own lifestyle and desires from a companion.
           </p>
         </Accordion.Content>
-        <Accordion.Title
-          active={activeIndex === 5}
-          index={5}
-          onClick={this.handleClick}
-        >
-          <h2
-            style={{ borderTop: "1px solid darkgrey", marginTop: "-9px" }}
-            className="h2-style"
-          />
-        </Accordion.Title>
-        <Accordion.Content active={activeIndex === 5} />
       </Accordion>
     );
   }

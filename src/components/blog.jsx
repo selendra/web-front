@@ -1,211 +1,154 @@
 import React, { Component } from "react";
-import { Modal } from "semantic-ui-react";
+import Footer from "./layouts/footer";
+import Navbar from "./layouts/navbar";
+import { Helmet } from "react-helmet";
+import axios from "axios";
+import { Modal, Image } from "semantic-ui-react";
+import { Facebook } from "react-content-loader";
+import parse from "html-react-parser";
 
 class Blog extends Component {
-  state = {};
+  state = {
+    data: null,
+    loading: true,
+    open: false,
+    title: "",
+    content: "",
+    thumbnail: ""
+  };
+
+  closeConfigShow = (closeOnEscape, closeOnDimmerClick) => () => {
+    this.setState({ closeOnEscape, closeOnDimmerClick, open: true });
+  };
+
+  close = () => this.setState({ open: false });
+
+  displayData = ({ ...data }) => {
+    this.setState({ open: true });
+    this.setState({ title: data.title });
+    this.setState({ content: data.content });
+    this.setState({ thumbnail: data.thumbnail });
+  };
+
+  card = () => {
+    return <div>Hello World</div>;
+  };
+
+  componentDidMount() {
+    axios
+      .get(
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@koompi"
+      )
+      .then(res => {
+        this.setState({ data: res.data.items });
+      });
+  }
+
+  displayLoading = () => {
+    let loading = [];
+    let i = 0;
+    for (let index = 0; index < 10; index++) {
+      i = i + 1;
+      loading.push(
+        <div key={i} className="column blur">
+          <Facebook />
+        </div>
+      );
+    }
+    return loading;
+  };
   render() {
+    const { open, closeOnEscape, closeOnDimmerClick } = this.state;
     return (
       <React.Fragment>
         <div className="blog-background-header">
+          <Navbar />
           <h1 className="blog">BLOG</h1>
         </div>
-        <div className="ui container margin-bottom">
-          <div className="ui stackable three column equal height stretched grid">
-            <div className="column">
-              <div className="shadowEvent">
-                <a
-                  className="newsDetail"
-                  href="https://medium.com/p/981c765f55c6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    style={{
-                      backgroundImage:
-                        'url("https://cdn-images-1.medium.com/max/960/1*M5btbITHfrf0_o8b4XWL5A.jpeg")',
-                      height: "200px",
-                      backgroundPosition: "center center",
-                      backgroundSize: "cover"
-                    }}
-                  />
-                  <div className="backgroundEvent">
-                    <center>
-                      <h3>A usual day at Emerald HUB</h3>
-                    </center>
-                    <br />
-                    <p>
-                      To spend the day at the Hub means see different faces and
-                      enjoy a nice environment to work in. Let me expl...
-                    </p>
-                    <p className="badge">SmallWorld Venture</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="column">
-              <div className="shadowEvent">
-                <div
-                  style={{
-                    backgroundImage:
-                      'url("https://cdn-images-1.medium.com/max/910/1*oHIg3oiWxiuLbwj82zFN2Q.jpeg")',
-                    height: "200px",
-                    backgroundPosition: "center center",
-                    backgroundSize: "cover"
-                  }}
-                />
-                <div className="backgroundEvent">
-                  <center>
-                    <h3>A lovely TeaTalk</h3>
-                  </center>
-                  <br />
-                  <p>
-                    On last Friday evening, the 6th January, Smallworld hosted a
-                    lovely&nbsp;TeaTalk. I am pretty sure that ...
-                  </p>
-                  <p className="badge">SmallWorld Venture</p>
-                </div>
-                {/* </a> */}
-              </div>
-            </div>
-            <div className="column">
-              <div className="shadowEvent">
-                <a
-                  className="newsDetail"
-                  href="https://medium.com/p/5ee11afe8598"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    style={{
-                      backgroundImage:
-                        'url("https://cdn-images-1.medium.com/max/910/1*qWYKh6Uokl6lTQcku19K0w.jpeg")',
-                      height: "200px",
-                      backgroundPosition: "center center",
-                      backgroundSize: "cover"
-                    }}
-                  />
-                  <div className="backgroundEvent">
-                    <center>
-                      <h3>
-                        Let’s take the boat with the SmallWorld team&nbsp;!
-                      </h3>
-                    </center>
-                    <br />
-                    <p>
-                      Let’s take the boat with the SmallWorld team&nbsp;! What a
-                      better way to start a week than by spending...
-                    </p>
-                    <p className="badge">SmallWorld Venture</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="column">
-              <div className="shadowEvent">
-                <a
-                  className="newsDetail"
-                  href="https://medium.com/p/7847583baaba"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    style={{
-                      backgroundImage:
-                        'url("https://cdn-images-1.medium.com/max/1024/1*OYPX0_U4bkfxFAM5HskNaA.jpeg")',
-                      height: "200px",
-                      backgroundPosition: "center center",
-                      backgroundSize: "cover"
-                    }}
-                  />
-                  <div className="backgroundEvent">
-                    <center>
-                      <h3>Who is pitching on the next Startup Party?</h3>
-                    </center>
-                    <br />
-                    <p>
-                      The next Startup Party will happen this Friday 10th
-                      February and you may want to know which startups are g...
-                    </p>
-                    <p className="badge">SmallWorld Venture</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="column">
-              <div className="shadowEvent">
-                <a
-                  className="newsDetail"
-                  href="https://medium.com/p/e2085e448033"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    style={{
-                      backgroundImage:
-                        'url("https://cdn-images-1.medium.com/max/1024/1*HU9nKnNT_z0UY3TbeY7Dlg.jpeg")',
-                      height: "200px",
-                      backgroundPosition: "center center",
-                      backgroundSize: "cover"
-                    }}
-                  />
-                  <div className="backgroundEvent">
-                    <center>
-                      <h3>Smallworld Small Dinner</h3>
-                    </center>
-                    <br />
-                    <p>
-                      This Sunday, Smallworld team left Toul Kork and went to my
-                      place the all afternoon to prepare and share an...
-                    </p>
-                    <p className="badge">SmallWorld Venture</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="column">
-              <div className="shadowEvent">
-                <a
-                  className="newsDetail"
-                  href="https://medium.com/p/a70235d7fc8b"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    style={{
-                      backgroundImage:
-                        'url("https://cdn-images-1.medium.com/max/910/1*VHMH72qjPiNkNPpFoTjjog.jpeg")',
-                      height: "200px",
-                      backgroundPosition: "center center",
-                      backgroundSize: "cover"
-                    }}
-                  />
-                  <div className="backgroundEvent">
-                    <center>
-                      <h3>Workshops from Remote Year in December</h3>
-                    </center>
-                    <br />
-                    <p>
-                      As new Remote teams have arrived in Phnom Penh, new
-                      workshops will happen during this month&nbsp;! &lt;a
-                      href="htt...
-                    </p>
-                    <p className="badge">SmallWorld Venture</p>
-                  </div>
-                </a>
-              </div>
-            </div>
+        <Helmet>
+          <title>ZEETOMIC | BLOG</title>
+          <meta
+            name="keywords"
+            content="zeetomic blogs, news and events koompi, koompi news and events, koompi, smallworld venture"
+          />
+          <meta name="description" content="zeetomic blog" />
+        </Helmet>
+        <Modal
+          open={open}
+          closeOnEscape={closeOnEscape}
+          closeOnDimmerClick={closeOnDimmerClick}
+          onClose={this.close}
+          size="small"
+        >
+          {/* <Modal.Header></Modal.Header> */}
+          <Image src={this.state.thumbnail} fluid />
+          <Modal.Content>
+            <h3>{this.state.title}</h3>
+            <p> {parse(this.state.content)} </p>
+          </Modal.Content>
+        </Modal>
+        <div className="ui container">
+          <center>
+            <h1 style={{ padding: "5vh 0" }} className="kosmosConentNews">
+              News and Events
+            </h1>
+          </center>
+          <div className="ui stackable three column grid">
+            {!this.state.data ? (
+              <React.Fragment>{this.displayLoading()}</React.Fragment>
+            ) : (
+              this.state.data.map(post => {
+                return (
+                  <React.Fragment key={post.pubDate.toString()}>
+                    <div
+                      className="column blur"
+                      onClick={e => {
+                        this.displayData({ ...post });
+                      }}
+                    >
+                      <center className="shadowEvent">
+                        <div
+                          style={{
+                            backgroundImage: `url(${post.thumbnail})`,
+                            height: "200px",
+                            backgroundPosition: "center center",
+                            backgroundSize: "cover"
+                          }}
+                        />
+                        <div className="index-background">
+                          <React.Fragment>
+                            <div className="byDate">
+                              <span>
+                                {new Date(post.pubDate).toDateString()}
+                              </span>
+                            </div>
+                            <h4>{post.title}</h4>
+                            <div className="index-description">
+                              {parse(post.content.substring(0, 100) + "...")}
+                            </div>
+
+                            <div className="bySomeOne">
+                              By: <span>{post.author}</span>
+                            </div>
+                          </React.Fragment>
+                        </div>
+                      </center>
+                    </div>
+                  </React.Fragment>
+                );
+              })
+            )}
           </div>
         </div>
-        <br />
-        <center>
-          <button className="ui button btn">Load More</button>
-          {/* <button class="btn btn-round btn-lg btn-filled-orange">
-            Register
-          </button> */}
-        </center>
+        <div style={{ padding: "3rem" }}>
+          <center>
+            <button className="ui button btn">Load More</button>
+          </center>
+        </div>
+        {console.log(this.state.data)}
+        <Footer />
       </React.Fragment>
     );
   }
 }
-
 export default Blog;
