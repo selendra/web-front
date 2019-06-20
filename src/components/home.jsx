@@ -31,7 +31,7 @@ const cards = (id, image, header, descr) => {
     <div key={id} className="card card-style">
       <div className="image">
         <img
-          className="ui medium image"
+          className="ui medium image card-image-border"
           src={image}
           alt="vitamin-air"
           srcSet=""

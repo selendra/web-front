@@ -89,7 +89,7 @@ class Blog extends Component {
         </Modal>
         <div className="ui container">
           <center>
-            <h1 style={{ padding: "5vh 0" }} className="kosmosConentNews">
+            <h1 style={{ padding: "5vh 0" }} className="zeetomic-event-header">
               News and Events
             </h1>
           </center>
@@ -145,7 +145,7 @@ class Blog extends Component {
             <button className="ui button btn">Load More</button>
           </center>
         </div>
-        {console.log(this.state.data)}
+
         <Footer />
       </React.Fragment>
     );

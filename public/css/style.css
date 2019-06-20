@@ -163,6 +163,8 @@ h6 {
 }
 .description-sub {
   line-height: 1.7;
+  letter-spacing: 0.5px;
+  font-size: 20px;
 }
 /* slide show. */
 .btn-mv-right {
@@ -204,7 +206,7 @@ h6 {
 .slide-content-box {
   position: absolute;
   left: 30%;
-  top: 50%;
+  top: 40%;
   transform: translate(-30%, 0%);
 }
 .slide-content-container {
@@ -593,7 +595,7 @@ hr {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
@@ -603,9 +605,12 @@ hr {
   font-size: 7rem;
   color: aliceblue;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.zeetomic-event-header {
+  font-size: 30px;
 }
 .index-background h4 {
   font-size: 16px !important;
@@ -719,7 +724,8 @@ figure img {
   .imageSlide {
     width: 50% !important;
   }
-  .card-image-background {
+  .card-image-background,
+  .card-image-border {
     border-radius: 10px !important;
   }
   .about-column-style p {
@@ -773,7 +779,7 @@ figure img {
     font-weight: 400;
   }
   .blog-background-header {
-    height: 50vh !important;
+    height: 25vh !important;
   }
   .sidebar-style a {
     font-size: 16px;
@@ -782,14 +788,16 @@ figure img {
     padding-top: 13px !important;
   }
   .blog {
-    top: 25%;
+    top: 15%;
   }
   .description-style-header,
-  .header-update {
-    font-size: 3rem !important;
+  .header-update,
+  .description-style-header {
+    font-size: 20px !important;
   }
   .home-bg-image {
     height: 50vh;
+    background-position: 30% 50%;
   }
   .header-text-box {
     top: 28%;
@@ -842,7 +850,7 @@ figure img {
   .slide-content-box {
     position: absolute;
     left: 40%;
-    top: 50%;
+    top: 40%;
     transform: translate(-30%, 0%);
   }
   .slide-content-description {
@@ -860,6 +868,10 @@ figure img {
   }
   .description button {
     font-size: 16px !important;
+  }
+  .zeetomic-event-header {
+    padding: 5vh 0;
+    font-size: 20px !important;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 766px) {
