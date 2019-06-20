@@ -128,7 +128,7 @@ h6 {
 }
 .recently-header {
   margin-bottom: 10vh;
-  font-size: 3rem;
+  font-size: 25px;
 }
 .recently-header div {
   word-spacing: 0.5rem;
@@ -576,7 +576,7 @@ hr {
 
 .h2-style {
   padding: 1rem;
-  color: #2185d0;
+  color: #008fc3;
   cursor: pointer;
   /* border-bottom: 1px solid darkgray; */
 }
@@ -674,6 +674,12 @@ figure img {
   width: 15rem;
   font-size: 1.1rem;
 }
+@media screen and (min-width: 1900px) {
+  .header-text-box {
+    top: 44%;
+    left: 45%;
+  }
+}
 /* @media query */
 @media screen and (max-width: 1024px) {
   html {
@@ -721,41 +727,66 @@ figure img {
   html {
     font-size: 30%;
   }
-  .imageSlide {
-    width: 50% !important;
-  }
+  /* home page */
   .card-image-background,
   .card-image-border {
     border-radius: 10px !important;
   }
+  .card-style {
+    margin: 0 auto !important;
+    height: auto;
+  }
+
+  .header-main-1 {
+    font-size: 17px !important;
+  }
+  .header-main-2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .recently-container {
+    padding-top: 4vh;
+  }
+  .recently-header {
+    margin-bottom: 4vh;
+    font-size: 20px !important;
+  }
+  .description-sub {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .home-bg-image {
+    height: 70vh;
+    background-position: 34% 50%;
+  }
+  .toggleicon {
+    margin-top: -6px;
+    width: 20px;
+  }
+
+  .description-style-header,
+  .header-update,
+  .description-style-header {
+    font-size: 20px !important;
+  }
+  .header-update {
+    font-size: 5rem;
+  }
+
+  .header-text-box {
+    left: 50%;
+  }
+  /* about page */
   .about-column-style p {
     font-size: 16px !important;
     padding: 0 2vh;
   }
-  .footer-icons {
-    font-size: 10px !important;
+  .about-project-header {
+    padding-bottom: 4vh !important;
   }
   .aboutPageContainer {
     width: 100% !important;
     margin: 0px auto;
-  }
-  .background-rais {
-    height: 50vh !important;
-  }
-  .h1-color-rais {
-    margin: 0 !important;
-  }
-  .h1-apply {
-    font-size: 5rem !important;
-  }
-  .h2-style {
-    font-size: 16px;
-  }
-  .p-color-rais {
-    font-size: 10px !important;
-  }
-  .margin-p {
-    font-size: 16px !important;
   }
   .columnLeft,
   .columnRight {
@@ -771,77 +802,19 @@ figure img {
   .circleRight {
     display: none;
   }
-  .content p {
-    padding: 0 2vh !important;
-  }
-  .description-sub {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .blog-background-header {
-    height: 25vh !important;
-  }
-  .sidebar-style a {
-    font-size: 16px;
+  /* slideshow */
+  .imageSlide {
+    width: 50% !important;
   }
   .slide-content-label {
     padding-top: 13px !important;
   }
-  .blog {
-    top: 15%;
-  }
-  .description-style-header,
-  .header-update,
-  .description-style-header {
-    font-size: 20px !important;
-  }
-  .home-bg-image {
-    height: 50vh;
-    background-position: 30% 50%;
-  }
-  .header-text-box {
-    top: 28%;
-  }
-  .header-menu {
-    display: none !important;
-  }
-  .header-update {
-    font-size: 5rem;
-  }
-  .card-style {
-    margin: 0 auto !important;
-    height: auto;
-  }
-  .recently-container {
-    padding-top: 4vh;
-  }
-  .recently-header {
-    margin-bottom: 4vh;
-  }
-  .sidebar-style {
-    font-size: 2.5rem !important;
-  }
-  .toggleicon {
-    margin-top: -6px;
-    width: 20px;
-  }
   .btn-mv-right,
   .btn-mv-left {
-    display: none;
-  }
-  .header-main-1 {
-    font-size: 17px !important;
-  }
-  .header-main-2 {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .navbar-menu {
     display: block;
-    padding: 40px 0;
-  }
-  .header-text-box {
-    left: 50%;
+    font-size: 5px !important;
+    user-select: none;
+    outline: none;
   }
   .slide-content {
     height: 85vw !important;
@@ -854,14 +827,49 @@ figure img {
     transform: translate(-30%, 0%);
   }
   .slide-content-description {
-    font-size: 3rem !important;
+    font-size: 14px !important;
     padding: 0 !important;
+  }
+  /* footer */
+  .footer-icons {
+    font-size: 10px !important;
+  }
+  /* blog */
+  .zeetomic-event-header {
+    padding: 5vh 0;
+    font-size: 20px !important;
+  }
+  .blog {
+    top: 15%;
+  }
+  .content p {
+    padding: 0 2vh !important;
+  }
+  .blog-background-header {
+    height: 25vh !important;
+  }
+  /* raisfund */
+  .h1-color-rais {
+    margin: 0 !important;
+  }
+  .background-rais {
+    height: 50vh !important;
+  }
+  .h1-apply {
+    font-size: 5rem !important;
+  }
+  .p-color-rais {
+    font-size: 16px !important;
+  }
+  .margin-top-2 button {
+    font-size: 13px !important;
+  }
+  /* invest */
+  .invest-main-header {
+    font-size: 20px !important;
   }
   .text-grey {
     font-size: 16px !important;
-  }
-  .invest-main-header {
-    font-size: 20px !important;
   }
   .invest-icons {
     font-size: 10px !important;
@@ -869,14 +877,41 @@ figure img {
   .description button {
     font-size: 16px !important;
   }
-  .zeetomic-event-header {
-    padding: 5vh 0;
-    font-size: 20px !important;
+  /* meanu */
+
+  .header-menu {
+    display: none !important;
+  }
+  /* sidebar */
+  .sidebar-style {
+    font-size: 2.5rem !important;
+  }
+  .sidebar-style a {
+    font-size: 16px;
+  }
+  .navbar-menu {
+    display: block;
+    padding: 40px 0;
+  }
+  /* others */
+  .h2-style {
+    font-size: 16px;
+  }
+  .margin-p {
+    font-size: 16px !important;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 766px) {
   .header-text-box {
     left: 35% !important;
+  }
+}
+@media screen and (min-width: 630px) and (max-width: 667px) {
+  .home-bg-image {
+    height: 100vh !important;
+  }
+  .header-text-box {
+    top: 50% !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -897,14 +932,13 @@ figure img {
     left: 45% !important;
   }
 }
-
+@media screen and (max-width: 360px) {
+  .header-text-box {
+    left: 40% !important;
+  }
+}
 @media screen and (max-width: 320px) {
   .home-bg-image div.header-text-box {
     left: 52% !important;
   }
 }
-/* @media screen and(max-width: 360px) {
-  .home-bg-image {
-    height: 50vh !important;
-  }
-} */
