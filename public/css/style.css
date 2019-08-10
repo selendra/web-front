@@ -677,7 +677,13 @@ figure img {
 @media screen and (min-width: 1900px) {
   .header-text-box {
     top: 44%;
-    left: 45%;
+    left: 39%;
+  }
+  .header-menu {
+    width: 100% !important;
+  }
+  .menu-item {
+    margin-right: 0 !important;
   }
 }
 /* @media query */
