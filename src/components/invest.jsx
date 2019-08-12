@@ -122,7 +122,7 @@ const invest = () => {
           <div className="ui huge centered header about-project-header">
             About Project
           </div>
-          <div className="ui centered stackable grid container">
+          <div className="ui centered stackable grid container about-project-container">
             <div className="six wide column about-column-style">
               <p>
                 A purpose-built student accommodation(PBSA) block in Nottingham,

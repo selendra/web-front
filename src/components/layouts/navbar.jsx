@@ -82,7 +82,7 @@ export class navbar extends Component {
           </div>
         </div>
         <div className="ui secondary stackable  menu container  header-menu">
-          <div className="left menu">
+          <div className="left menu menu-icon">
             <Link to="/">
               <img
                 className="menu-logo"

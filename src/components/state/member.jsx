@@ -24,16 +24,15 @@ class Member extends Component {
       },
       {
         id: 4,
-        image:
-          "https://pbs.twimg.com/profile_images/1119201258206683136/b0-pGUZW_400x400.png",
-        memberName: "Ma veasna",
-        memberPosition: "Front End Developer"
+        image: "./image/bro-5.jpg",
+        memberName: "Daveath",
+        memberPosition: "Mobile Developer"
       },
       {
         id: 5,
-        image: "./image/sovanden.jpg",
-        memberName: "Sarim Sovanden",
-        memberPosition: "Front End Developer"
+        image: "./image/bro-6.jpg",
+        memberName: "Piset",
+        memberPosition: "Full Stack developer"
       }
     ]
   };

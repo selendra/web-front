@@ -107,7 +107,7 @@ class home extends Component {
                   Decentralzed Platform Empowering Community Enconomic
                 </h1>
                 <h1 className="header-main-2">
-                  The generation of highly scalable, autonomous-incentivized
+                  The generation of highly scalable, autonomous incentivized
                   platform base on decentralized network infrastructure that
                   empower the community economic.
                 </h1>
