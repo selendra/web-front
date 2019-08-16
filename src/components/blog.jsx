@@ -37,7 +37,7 @@ class Blog extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/koompi"
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/zeetomic"
       )
       .then(res => {
         this.setState({ data: res.data.items });
