@@ -61,6 +61,14 @@ class Blog extends Component {
     const { open, closeOnEscape, closeOnDimmerClick } = this.state;
     return (
       <React.Fragment>
+        <Helmet>
+          <title>ZEETOMIC | BLOG</title>
+          <meta
+            name="keywords"
+            content="Zeetomic news, news and events zeetomic, zeetomic news and events, zeetomic, smallworld venture"
+          />
+          <meta name="description" content="zeetomic news and events" />
+        </Helmet>
         <div className="blog-background-header">
           <Navbar />
           <h1 className="blog">BLOG</h1>

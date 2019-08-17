@@ -3,10 +3,19 @@ import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
 import { Link } from "react-router-dom";
 import Member from "./state/member";
+import Helmet from "react-helmet";
 const invest = () => {
   return (
     <div>
       <React.Fragment>
+        <Helmet>
+          <title>ZEETOMIC | INVEST</title>
+          <meta
+            name="keywords"
+            content="Zeetomic news, news and events zeetomic, zeetomic news and events, zeetomic, smallworld venture"
+          />
+          <meta name="description" content="zeetomic news and events" />
+        </Helmet>
         <div className="invest-container">
           <Navbar />
           <div className="ui container invest-sub-container">

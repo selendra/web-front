@@ -419,6 +419,11 @@ h6 {
   background-image: url("../image/zee-header-banner-2.jpg");
   min-height: 100vh;
   background-size: left;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 hr {
@@ -551,8 +556,11 @@ hr {
 /*raisefund*/
 .background-rais {
   background-image: url("../image/zee-header-banner.jpg");
-  height: 100vh;
-  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 .a-submit {
   font-size: 2rem;

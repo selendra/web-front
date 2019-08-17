@@ -3,6 +3,7 @@ import Navbar from "./layouts/navbar";
 import { Link } from "react-router-dom";
 import Slideview from "./slideshow";
 import Footer from "./layouts/footer";
+import Helmet from "react-helmet";
 
 const card = (image, header, descr) => {
   return (
@@ -100,6 +101,14 @@ class home extends Component {
       <React.Fragment>
         <div className="home-bg-image">
           <div className="ui container ">
+            <Helmet>
+              <title>ZEETOMIC | HOME</title>
+              <meta
+                name="keywords"
+                content="Zeetomic news, news and events zeetomic, zeetomic news and events, zeetomic, smallworld venture"
+              />
+              <meta name="description" content="zeetomic news and events" />
+            </Helmet>
             <Navbar sidevalue={this.state.slidebar} open={this.opensidebar} />
             <div className="ui text container header-text-box">
               <div className="header-main">

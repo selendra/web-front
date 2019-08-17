@@ -2,9 +2,18 @@ import React from "react";
 import Member from "./state/member";
 import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
+import Helmet from "react-helmet";
 const About = () => {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>ZEETOMIC | ABOUT</title>
+        <meta
+          name="keywords"
+          content="Zeetomic news, news and events zeetomic, zeetomic news and events, zeetomic, smallworld venture"
+        />
+        <meta name="description" content="zeetomic news and events" />
+      </Helmet>
       <div className="background-header">
         <Navbar />
         <div className="ui text container">

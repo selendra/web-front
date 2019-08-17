@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Accordion from "./accordion";
 import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
+import Helmet from "react-helmet";
 class Raisfund extends Component {
   state = {
     FAQ: [
@@ -41,6 +42,14 @@ class Raisfund extends Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <title>ZEETOMIC | RAISEFUND</title>
+          <meta
+            name="keywords"
+            content="Zeetomic news, news and events zeetomic, zeetomic news and events, zeetomic, smallworld venture"
+          />
+          <meta name="description" content="zeetomic news and events" />
+        </Helmet>
         <div className="background-rais">
           <Navbar />
           <div className="padding-all-letter">
