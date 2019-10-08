@@ -52,21 +52,21 @@ class home extends Component {
       {
         _id: 1000,
         image: "./image/vitamin-air.png",
-        header: "Community Incentivise Platform Base on Smart Contract",
+        header: "Customer Loyalty Program with blockchain",
         descr:
-          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier, safer."
+          "Customer loyalty programs allow companies to reward customers who make purchases frequently or another specified period. Consumers earn points on purchases and redeem for discount, freebie, or special customer treatment. These programs allow multiple companies as partners to cater to a customer base."
       },
       {
         _id: 1001,
         image: "./image/vitamin-air-v.png",
-        header: "Decentralized Internet Sharing",
+        header: "Vested Shares And Crowdfunding Platform",
         descr:
-          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
+          "Zeetomic enables any startup to create an asset and start to accept an investment from crowdfunding and secure by Zeetomic custodian account with our partner. Vested Share is an incentivized program for employer contributions with a qualified retirement plan account or pension plan."
       },
       {
         _id: 1002,
         image: "./image/crypto.png",
-        header: "ISO Listing and Trading",
+        header: "Payment Solutions",
         descr:
           "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       }
@@ -75,7 +75,7 @@ class home extends Component {
       {
         _id: 1000,
         image: "./image/city.jpg",
-        header: "Community Incentivise Platform Base on Smart Contract",
+        header: "Customer Loyalty Program with blockchain",
         descr:
           "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       },
