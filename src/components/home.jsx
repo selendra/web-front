@@ -54,14 +54,14 @@ class home extends Component {
         image: "./image/vitamin-air.png",
         header: "Customer Loyalty Program with blockchain",
         descr:
-          "Customer loyalty programs allow companies to reward customers who make purchases frequently or another specified period. Consumers earn points on purchases and redeem for discount, freebie, or special customer treatment. These programs allow multiple companies as partners to cater to a customer base."
+          "Customer loyalty programs allow companies to reward customers who make purchases frequently or another specified period."// Consumers earn points on purchases and redeem for discount, freebie, or special customer treatment. These programs allow multiple companies as partners to cater to a customer base."
       },
       {
         _id: 1001,
         image: "./image/vitamin-air-v.png",
         header: "Vested Shares And Crowdfunding Platform",
         descr:
-          "Zeetomic enables any startup to create an asset and start to accept an investment from crowdfunding and secure by Zeetomic custodian account with our partner. Vested Share is an incentivized program for employer contributions with a qualified retirement plan account or pension plan."
+          "Zeetomic enables any startup to create an asset and start to accept an investment from crowdfunding and secure by Zeetomic custodian account with our partner."// Vested Share is an incentivized program for employer contributions with a qualified retirement plan account or pension plan."
       },
       {
         _id: 1002,
