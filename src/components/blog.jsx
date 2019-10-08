@@ -65,7 +65,7 @@ class Blog extends Component {
           <title>ZEETOMIC | BLOG</title>
           <meta
             name="keywords"
-            content="Zeetomic news, news and events zeetomic, zeetomic news and events, zeetomic, smallworld venture"
+            content="Digital Asset, Customer Loyalty, Real Estate, Vested Shares, Payment Solution, smallworld venture"
           />
           <meta name="description" content="zeetomic news and events" />
         </Helmet>

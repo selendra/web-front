@@ -40,7 +40,7 @@ class Member extends Component {
     return (
       <div className="background-under-header-1">
         <div className="ui container member-container">
-          <h1 className="memberTitle">Our People</h1>
+          <h1 className="memberTitle">Our Team</h1>
           <div className="ui grid">
             <div className="doubling three column row">
               {this.state.Person.map(Persons => (
