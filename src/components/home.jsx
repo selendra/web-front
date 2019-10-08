@@ -113,12 +113,10 @@ class home extends Component {
             <div className="ui text container header-text-box">
               <div className="header-main">
                 <h1 className="header-main-1">
-                  Decentralzed Platform Empowering Community Enconomic
+                The Platform for the Issuance and Management of Digital Asset
                 </h1>
                 <h1 className="header-main-2">
-                  The generation of highly scalable, autonomous incentivized
-                  platform base on decentralized network infrastructure that
-                  empower the community economic.
+                We provide trusted global solutions for creating a digital asset.  Customer Loyalty | Real Estate | Vested Shares | Payment Solution 
                 </h1>
               </div>
               <Link to="/learnmore " className="learn-more">

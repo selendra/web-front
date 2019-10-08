@@ -13,26 +13,26 @@ class Member extends Component {
         id: 2,
         image: "image/bro-2.jpg",
         memberName: "Thul Rithy",
-        memberPosition: "PR and Partnership"
+        memberPosition: "Advisor"
       },
 
       {
         id: 3,
         image: "image/bro-4.jpg",
-        memberName: "San Vuthy",
-        memberPosition: "Full Stack Web Developer"
+        memberName: "Sokhomoliyuth Tea",
+        memberPosition: "Technial Advisor"
       },
       {
         id: 4,
         image: "./image/bro-5.jpg",
-        memberName: "Daveath",
+        memberName: "Daveat Corn",
         memberPosition: "Mobile Developer"
       },
       {
         id: 5,
         image: "./image/bro-6.jpg",
-        memberName: "Piset",
-        memberPosition: "Full Stack developer"
+        memberName: "Heang Piset",
+        memberPosition: "Web Developer"
       }
     ]
   };
