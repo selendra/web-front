@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cbf5f474-99f6-4e83-b98d-7b15b084cc67/deploy-status)](https://app.netlify.com/sites/zeetomic/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
