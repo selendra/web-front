@@ -52,23 +52,23 @@ class home extends Component {
       {
         _id: 1000,
         image: "./image/vitamin-air.png",
-        header: "Customer Loyalty Program with blockchain",
+        header: "Customer Loyalty Program",
         descr:
-          "Customer loyalty programs allow companies to reward customers who make purchases frequently or another specified period."// Consumers earn points on purchases and redeem for discount, freebie, or special customer treatment. These programs allow multiple companies as partners to cater to a customer base."
+          "Customer loyalty programs allow companies to reward customers who make purchases frequently or on a specified period."// Consumers earn points on purchases and redeem for discount, freebie, or special customer treatment. These programs allow multiple companies as partners to cater to a customer base."
       },
       {
         _id: 1001,
         image: "./image/vitamin-air-v.png",
-        header: "Vested Shares And Crowdfunding Platform",
+        header: "Vested Shares And Crowdfunding",
         descr:
-          "Zeetomic enables any startup to create an asset and start to accept an investment from crowdfunding and secure by Zeetomic custodian account with our partner."// Vested Share is an incentivized program for employer contributions with a qualified retirement plan account or pension plan."
+          "Our Platform enables any startup to create an asset and accept crowdfunding secured by the Zeetomic custodian account."// Vested Share is an incentivized program for employer contributions with a qualified retirement plan account or pension plan."
       },
       {
         _id: 1002,
         image: "./image/crypto.png",
-        header: "Payment Solutions",
+        header: "API for Payment Solutions",
         descr:
-          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
+          "With our robust API developers can access payment ecosystems for a more dynamic transition of value."
       }
     ],
     updates_data: [
