@@ -37,7 +37,7 @@ class Blog extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/zeetomic"
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@koompi"
       )
       .then(res => {
         this.setState({ data: res.data.items });
@@ -61,14 +61,6 @@ class Blog extends Component {
     const { open, closeOnEscape, closeOnDimmerClick } = this.state;
     return (
       <React.Fragment>
-        <Helmet>
-          <title>ZEETOMIC | BLOG</title>
-          <meta
-            name="keywords"
-            content="Digital Asset, Customer Loyalty, Real Estate, Vested Shares, Payment Solution, smallworld venture"
-          />
-          <meta name="description" content="zeetomic news and events" />
-        </Helmet>
         <div className="blog-background-header">
           <Navbar />
           <h1 className="blog">BLOG</h1>

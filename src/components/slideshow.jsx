@@ -49,7 +49,9 @@ export class slideshow extends Component {
       slidesToScroll: 1,
       infinite: true,
       className: "slide-container",
-      centerPadding: true
+      centerPadding: true,
+      autoplay: true,
+      autoplaySpeed: 10000
     };
     return (
       <React.Fragment>

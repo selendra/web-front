@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 80%;
+  font-size: 62.5%;
 }
 
 body {
@@ -31,17 +31,21 @@ h6 {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 50vw;
 }
 
 .header-text-box {
-  position: absolute;
+  position: relative;
   font-size: 2rem;
-  left: 44%;
-  top: 55%;
-  transform: translate(-50%, -50%);
+  left: -22%;
+  top: 14vw;
 }
 
+.header-main{
+  position: relative;
+  left: 40px;
+  top: -5vw;
+}
 .header-main-1,
 .header-main-2 {
   display: inline-block;
@@ -63,18 +67,20 @@ h6 {
   margin-bottom: 2rem;
 }
 .header-menu {
-  padding-top: 2rem;
-  width: 88rem !important;
+  padding-top: 5rem;
+  /* width: 88rem !important; */
   position: relative;
   margin: 0 !important;
+}
+.navbarZeetomic{
+  margin: 0px !important;
+  position: absolute !important;
+  right: 0 !important;
 }
 
 .menu-item {
   margin: 0 auto !important;
-  margin-top: 0.4rem !important;
-}
-.menu-icon {
-  margin: auto 0 !important;
+  margin-top: -4px !important;
 }
 .open {
   position: fixed;
@@ -84,7 +90,7 @@ h6 {
   left: 0;
   background: #000;
   width: 62vw;
-  max-width: 30rem;
+  max-width: 300px;
   height: 100vh;
   transition: all 0.5s ease-in-out;
   transition: all 0s ease-in-out;
@@ -124,6 +130,9 @@ h6 {
 }
 
 /* Recently Project */
+.ui.grey.header {
+  color: black !important;
+}
 .recently-container {
   padding: 12vh 0 12vh 0;
   width: 100vw;
@@ -131,7 +140,7 @@ h6 {
 }
 .recently-header {
   margin-bottom: 10vh;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .recently-header div {
   word-spacing: 0.5rem;
@@ -167,7 +176,8 @@ h6 {
 .description-sub {
   line-height: 1.7;
   letter-spacing: 0.5px;
-  font-size: 2rem;
+  font-size: 20px;
+  text-align: left;
 }
 /* slide show. */
 .btn-mv-right {
@@ -197,11 +207,11 @@ h6 {
 }
 .slide-content-label {
   border-radius: 50%;
-  width: 4rem;
+  width: 40px;
   background: rgba(5, 146, 146, 0.938);
-  height: 4rem;
+  height: 40px;
   color: #fff !important;
-  padding-top: 0.5rem !important;
+  padding-top: 5px !important;
 }
 .ui.secondary.menu .active.item {
   color: #fbf508 !important;
@@ -252,7 +262,7 @@ h6 {
 }
 .invest-image {
   margin: auto !important;
-  width: 15rem !important;
+  width: 150px !important;
 }
 .invset-col-style div p {
   font-size: 4rem !important;
@@ -309,23 +319,6 @@ h6 {
 .about-project div:last-child div:first-child {
   margin: auto 0 !important;
 }
-.about-project-container {
-  margin-bottom: 5rem !important;
-}
-/* customize new and event */
-.byDate {
-  margin-left: 10px;
-  margin-top: 10px;
-  text-align: left;
-}
-.byDate span {
-  background-color: rgb(0, 174, 255) !important;
-  color: #fff;
-  padding: 2px 5px;
-  border-radius: 2px;
-  font-weight: 600;
-  font-size: 13px !important;
-}
 /* footer */
 .footer-container {
   text-align: center;
@@ -371,14 +364,14 @@ h6 {
   z-index: 1;
 }
 
-/* .ui.visible.left.overlay.sidebar.slideIn {
+.ui.visible.left.overlay.sidebar.slideIn {
   animation-name: slideIn;
   transition: all 0.2s;
   transition: all 0.2s;
   animation-timing-function: ease-in;
   animation-duration: 0.2s;
   background-color: (0, 0, 0, 0.2);
-} */
+}
 @keyframes slideIn {
   0% {
     transform: translate3d(-100%, 0, 0);
@@ -419,11 +412,6 @@ h6 {
   background-image: url("../image/zee-header-banner-2.jpg");
   min-height: 100vh;
   background-size: left;
-  background-size: cover;
-  background-position: center center;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  z-index: 1;
 }
 
 hr {
@@ -443,13 +431,12 @@ hr {
 }
 .about-column-main {
   padding: 15% 0 !important;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 .h1-ABOUT {
   color: darkgray;
   font-size: 4.5rem;
   line-height: 4.3rem;
-  margin-left: -3rem;
 }
 
 .background-under-header {
@@ -459,22 +446,22 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 6rem 0;
-  margin: 3rem;
+  padding: 60px 0px;
+  margin: 30px;
 }
 .aboutPageContainer {
   width: 70% !important;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .about-column-style p {
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 .about-misson {
   line-height: 7rem;
   font-size: 3rem;
 }
 .about-mr-style {
-  margin: 2rem 0;
+  margin: 20px 0;
 }
 .columnLeft {
   text-align: right !important;
@@ -482,31 +469,27 @@ hr {
 .columnRight {
   text-align: left !important;
 }
-.columnLeft,
-.columnRight p {
-  font-size: 1.6rem;
-}
 .circle {
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #a1a2a280;
   position: relative;
-  top: -1rem;
+  top: -10px;
 }
 .circleRight {
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #a1a2a280;
   position: relative;
-  top: -1rem;
+  top: -10px;
   float: right;
 }
 
 .about-p {
   font-size: 1.5rem;
-  margin-top: -1.3rem !important;
+  margin-top: -13px !important;
 }
 
 .about-misson-1 {
@@ -540,11 +523,11 @@ hr {
 }
 .memberName {
   color: rgba(0, 0, 0, 0.87);
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 .memberPosition {
   color: rgb(158, 158, 158);
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 .ui.small.circular.image.image-style {
@@ -556,11 +539,8 @@ hr {
 /*raisefund*/
 .background-rais {
   background-image: url("../image/zee-header-banner.jpg");
-  background-size: cover;
-  background-position: center center;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
 }
 .a-submit {
   font-size: 2rem;
@@ -609,7 +589,7 @@ hr {
 
 .h2-style {
   padding: 1rem;
-  color: #008fc3;
+  color: #2185d0;
   cursor: pointer;
   /* border-bottom: 1px solid darkgray; */
 }
@@ -707,21 +687,8 @@ figure img {
   width: 15rem;
   font-size: 1.1rem;
 }
-
 /* @media query */
-@media screen and (min-width: 1900px) {
-  .header-text-box {
-    top: 44%;
-    left: 39%;
-  }
-  /* .header-menu {
-    width: 100% !important;
-  } */
-  .menu-item {
-    margin-right: 0 !important;
-  }
-}
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   html {
     font-size: 50%;
   }
@@ -739,8 +706,8 @@ figure img {
     overflow: hidden !important;
   }
   .header-text-box {
-    left: 51%;
-    top: 30%;
+    left: 1%;
+    top: 12vw;
   }
   .home-bg-image {
     height: 70vh;
@@ -758,75 +725,51 @@ figure img {
     color: #f1c40f !important;
   }
 }
-@media screen and (max-width: 1023px) {
-  .header-text-box {
-    top: 40%;
+@media screen and (max-width: 850px) {
+  .header-main {
+      position: relative;
+      left: 0 !important;
   }
 }
 @media screen and (max-width: 767px) {
   html {
     font-size: 30%;
   }
-  /* home page */
+  .imageSlide {
+    width: 50% !important;
+  }
   .card-image-background,
   .card-image-border {
     border-radius: 10px !important;
   }
-  .card-style {
-    margin: 0 auto !important;
-    height: auto;
-  }
-
-  .header-main-1 {
-    font-size: 17px !important;
-  }
-  .header-main-2 {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .recently-container {
-    padding-top: 4vh;
-  }
-  .recently-header {
-    margin-bottom: 4vh;
-    font-size: 20px !important;
-  }
-  .description-sub {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .home-bg-image {
-    height: 70vh;
-    background-position: 34% 50%;
-  }
-  .toggleicon {
-    margin-top: -6px;
-    width: 20px;
-  }
-
-  .description-style-header,
-  .header-update,
-  .description-style-header {
-    font-size: 20px !important;
-  }
-  .header-update {
-    font-size: 5rem;
-  }
-
-  .header-text-box {
-    left: 50%;
-  }
-  /* about page */
   .about-column-style p {
     font-size: 16px !important;
     padding: 0 2vh;
   }
-  .about-project-header {
-    padding-bottom: 4vh !important;
+  .footer-icons {
+    font-size: 10px !important;
   }
   .aboutPageContainer {
     width: 100% !important;
     margin: 0px auto;
+  }
+  .background-rais {
+    height: 50vh !important;
+  }
+  .h1-color-rais {
+    margin: 0 !important;
+  }
+  .h1-apply {
+    font-size: 5rem !important;
+  }
+  .h2-style {
+    font-size: 16px;
+  }
+  .p-color-rais {
+    font-size: 10px !important;
+  }
+  .margin-p {
+    font-size: 16px !important;
   }
   .columnLeft,
   .columnRight {
@@ -842,19 +785,83 @@ figure img {
   .circleRight {
     display: none;
   }
-  /* slideshow */
-  .imageSlide {
-    width: 50% !important;
+  .content p {
+    padding: 0 2vh !important;
+  }
+  .description-sub {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .blog-background-header {
+    height: 25vh !important;
+  }
+  .sidebar-style a {
+    font-size: 16px;
   }
   .slide-content-label {
     padding-top: 13px !important;
   }
+  .blog {
+    top: 15%;
+  }
+  .description-style-header,
+  .header-update,
+  .description-style-header {
+    font-size: 20px !important;
+  }
+  .home-bg-image {
+    height: 100vw;
+    background-position: 30% 50%;
+  }
+  /* .header-text-box {
+    top: 28%;
+  } */
+  .header-menu {
+    display: none !important;
+  }
+  .header-update {
+    font-size: 5rem;
+  }
+  .card-style {
+    margin: 0 auto !important;
+    height: auto;
+  }
+  .recently-container {
+    padding-top: 4vh;
+  }
+  .recently-header {
+    margin-bottom: 4vh;
+  }
+  .sidebar-style {
+    font-size: 2.5rem !important;
+  }
+  .toggleicon {
+    margin-top: -6px;
+    width: 20px;
+  }
   .btn-mv-right,
   .btn-mv-left {
+    display: none;
+  }
+  .header-main{
+    width: 60%;
+    left: 40px;
+    top: -10vw !important;
+  }
+  .header-main h1:first-child{
+    font-size: 22px !important;
+  }
+  .header-main-1 {
+    font-size: 3rem !important;
+    width: 100%;
+  }
+  .header-main-2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .navbar-menu {
     display: block;
-    font-size: 5px !important;
-    user-select: none;
-    outline: none;
+    padding: 40px 0;
   }
   .slide-content {
     height: 85vw !important;
@@ -867,49 +874,14 @@ figure img {
     transform: translate(-30%, 0%);
   }
   .slide-content-description {
-    font-size: 14px !important;
+    font-size: 3rem !important;
     padding: 0 !important;
-  }
-  /* footer */
-  .footer-icons {
-    font-size: 10px !important;
-  }
-  /* blog */
-  .zeetomic-event-header {
-    padding: 5vh 0;
-    font-size: 20px !important;
-  }
-  .blog {
-    top: 15%;
-  }
-  .content p {
-    padding: 0 2vh !important;
-  }
-  .blog-background-header {
-    height: 25vh !important;
-  }
-  /* raisfund */
-  .h1-color-rais {
-    margin: 0 !important;
-  }
-  .background-rais {
-    height: 50vh !important;
-  }
-  .h1-apply {
-    font-size: 5rem !important;
-  }
-  .p-color-rais {
-    font-size: 16px !important;
-  }
-  .margin-top-2 button {
-    font-size: 13px !important;
-  }
-  /* invest */
-  .invest-main-header {
-    font-size: 20px !important;
   }
   .text-grey {
     font-size: 16px !important;
+  }
+  .invest-main-header {
+    font-size: 20px !important;
   }
   .invest-icons {
     font-size: 10px !important;
@@ -917,51 +889,26 @@ figure img {
   .description button {
     font-size: 16px !important;
   }
-  /* meanu */
-
-  .header-menu {
-    display: none !important;
-  }
-  /* sidebar */
-  .sidebar-style {
-    font-size: 2.5rem !important;
-  }
-  .sidebar-style a {
-    font-size: 16px;
-  }
-  .navbar-menu {
-    display: block;
-    padding: 40px 0;
-  }
-  /* others */
-  .h2-style {
-    font-size: 16px;
-  }
-  .margin-p {
-    font-size: 16px !important;
+  .zeetomic-event-header {
+    padding: 5vh 0;
+    font-size: 20px !important;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 766px) {
+
+@media screen and (max-width: 500px) {
+  .header-main {
+      width: 100%;
+      left: 0;
+      top: -10vw !important;
+  }
+}
+
+/* @media screen and (min-width: 600px) and (max-width: 766px) {
   .header-text-box {
     left: 35% !important;
   }
 }
-@media screen and (min-width: 630px) and (max-width: 667px) {
-  .home-bg-image {
-    height: 100vh !important;
-  }
-  .header-text-box {
-    top: 50% !important;
-  }
-}
-@media screen and (max-width: 600px) {
-  .header-text-box {
-    left: 36% !important;
-  }
-  .header-main-1 {
-    font-size: 3rem;
-  }
-}
+
 @media screen and (max-width: 414px) {
   .header-text-box {
     left: 35% !important;
@@ -971,14 +918,15 @@ figure img {
   .header-text-box {
     left: 45% !important;
   }
-}
-@media screen and (max-width: 360px) {
-  .header-text-box {
-    left: 40% !important;
-  }
-}
+} */
+
 @media screen and (max-width: 320px) {
   .home-bg-image div.header-text-box {
     left: 52% !important;
   }
 }
+/* @media screen and(max-width: 360px) {
+  .home-bg-image {
+    height: 50vh !important;
+  }
+} */

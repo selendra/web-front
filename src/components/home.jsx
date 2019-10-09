@@ -3,7 +3,6 @@ import Navbar from "./layouts/navbar";
 import { Link } from "react-router-dom";
 import Slideview from "./slideshow";
 import Footer from "./layouts/footer";
-import Helmet from "react-helmet";
 
 const card = (image, header, descr) => {
   return (
@@ -52,21 +51,21 @@ class home extends Component {
       {
         _id: 1000,
         image: "./image/vitamin-air.png",
-        header: "Customer Loyalty Program with blockchain",
+        header: "Community Incentivise Platform Base on Smart Contract",
         descr:
-          "Customer loyalty programs allow companies to reward customers who make purchases frequently or another specified period."// Consumers earn points on purchases and redeem for discount, freebie, or special customer treatment. These programs allow multiple companies as partners to cater to a customer base."
+          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier, safer."
       },
       {
         _id: 1001,
         image: "./image/vitamin-air-v.png",
-        header: "Vested Shares And Crowdfunding Platform",
+        header: "Decentralized Internet Sharing",
         descr:
-          "Zeetomic enables any startup to create an asset and start to accept an investment from crowdfunding and secure by Zeetomic custodian account with our partner."// Vested Share is an incentivized program for employer contributions with a qualified retirement plan account or pension plan."
+          "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       },
       {
         _id: 1002,
         image: "./image/crypto.png",
-        header: "Payment Solutions",
+        header: "ISO Listing and Trading",
         descr:
           "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       }
@@ -75,7 +74,7 @@ class home extends Component {
       {
         _id: 1000,
         image: "./image/city.jpg",
-        header: "Customer Loyalty Program with blockchain",
+        header: "Community Incentivise Platform Base on Smart Contract",
         descr:
           "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       },
@@ -101,28 +100,24 @@ class home extends Component {
       <React.Fragment>
         <div className="home-bg-image">
           <div className="ui container ">
-            <Helmet>
-              <title>ZEETOMIC | HOME</title>
-              <meta
-                name="keywords"
-                content="Digital Asset, Customer Loyalty, Real Estate, Vested Shares, Payment Solution, smallworld venture"
-              />
-              <meta name="description" content="zeetomic news and events" />
-            </Helmet>
             <Navbar sidevalue={this.state.slidebar} open={this.opensidebar} />
-            <div className="ui text container header-text-box">
+            <div className="ui text container header-text-box" style={{margin: "0px"}}>
               <div className="header-main">
                 <h1 className="header-main-1">
                 The Platform for the Issuance and Management of Digital Asset
                 </h1>
                 <h1 className="header-main-2">
-                We provide trusted global solutions for creating a digital asset.  Customer Loyalty | Real Estate | Vested Shares | Payment Solution 
+                  The generation of highly scalable, autonomous-incentivized
+                  platform base on decentralized network infrastructure that
+                  empower the community economic.
                 </h1>
-              </div>
-              <Link to="/learnmore " className="learn-more">
+                <br/>
+                <Link to="/learnmore " className="learn-more">
                 <span className="learn-more-word">Learn More</span>
                 <span className="arrow-home">&#10093;</span>
               </Link>
+              </div>
+              
             </div>
           </div>
         </div>
