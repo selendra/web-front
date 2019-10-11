@@ -107,9 +107,7 @@ class home extends Component {
                 The Platform for the Issuance and Management of Digital Asset
                 </h1>
                 <h2 className="header-main-2">
-                  The generation of highly scalable, autonomous-incentivized
-                  platform base on decentralized network infrastructure that
-                  empower the community economic.
+                We provide trusted global solutions for creating a digital asset. Customer Loyalty | Real Estate | Vested Shares | Payment Solution
                 </h2>
                 <br/>
                 <Link to="/learnmore " className="learn-more">
