@@ -3,7 +3,6 @@ import Navbar from "./layouts/navbar";
 import { Link } from "react-router-dom";
 import Slideview from "./slideshow";
 import Footer from "./layouts/footer";
-import Helmet from "react-helmet";
 
 const card = (image, header, descr) => {
   return (
@@ -75,7 +74,7 @@ class home extends Component {
       {
         _id: 1000,
         image: "./image/city.jpg",
-        header: "Customer Loyalty Program with blockchain",
+        header: "Community Incentivise Platform Base on Smart Contract",
         descr:
           "Zeeva ultivmate goal is to makes the network more decentralized, efficient, equalized, robust and secure, thus enabling healthier,safer, and more open internet for community."
       },
@@ -101,28 +100,22 @@ class home extends Component {
       <React.Fragment>
         <div className="home-bg-image">
           <div className="ui container ">
-            <Helmet>
-              <title>ZEETOMIC | HOME</title>
-              <meta
-                name="keywords"
-                content="Digital Asset, Customer Loyalty, Real Estate, Vested Shares, Payment Solution, smallworld venture"
-              />
-              <meta name="description" content="zeetomic news and events" />
-            </Helmet>
             <Navbar sidevalue={this.state.slidebar} open={this.opensidebar} />
-            <div className="ui text container header-text-box">
+            <div className="ui text container header-text-box" style={{margin: "0px"}}>
               <div className="header-main">
                 <h1 className="header-main-1">
                 The Platform for the Issuance and Management of Digital Asset
                 </h1>
                 <h1 className="header-main-2">
-                We provide trusted global solutions for creating a digital asset.  Customer Loyalty | Real Estate | Vested Shares | Payment Solution 
+                We provide trusted global solutions for creating a digital asset. Customer Loyalty | Real Estate | Vested Shares | Payment Solution
                 </h1>
-              </div>
-              <Link to="/learnmore " className="learn-more">
+                <br/>
+                <Link to="/learnmore " className="learn-more">
                 <span className="learn-more-word">Learn More</span>
                 <span className="arrow-home">&#10093;</span>
               </Link>
+              </div>
+              
             </div>
           </div>
         </div>

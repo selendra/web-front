@@ -3,19 +3,10 @@ import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
 import { Link } from "react-router-dom";
 import Member from "./state/member";
-import Helmet from "react-helmet";
 const invest = () => {
   return (
     <div>
       <React.Fragment>
-        <Helmet>
-          <title>ZEETOMIC | INVEST</title>
-          <meta
-            name="keywords"
-            content="Digital Asset, Customer Loyalty, Real Estate, Vested Shares, Payment Solution, smallworld venture"
-          />
-          <meta name="description" content="zeetomic news and events" />
-        </Helmet>
         <div className="invest-container">
           <Navbar />
           <div className="ui container invest-sub-container">
@@ -131,7 +122,7 @@ const invest = () => {
           <div className="ui huge centered header about-project-header">
             About Project
           </div>
-          <div className="ui centered stackable grid container about-project-container">
+          <div className="ui centered stackable grid container">
             <div className="six wide column about-column-style">
               <p>
                 A purpose-built student accommodation(PBSA) block in Nottingham,
