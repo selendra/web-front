@@ -33,6 +33,12 @@ class Member extends Component {
         image: "./image/bro-6.jpg",
         memberName: "Heang Piset",
         memberPosition: "Web Developer"
+      },
+      {
+        id: 6,
+        image: "./image/bro-7.jpg",
+        memberName: "Chinyong Chhe",
+        memberPosition: "Backend Developer"
       }
     ]
   };

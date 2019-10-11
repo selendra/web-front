@@ -11,12 +11,12 @@ function App() {
     <React.Fragment>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/invest" component={Invest} />
-        <Route exact path="/raiseFund" component={RaiseFund} />
-        <Route exact path="/aboutPage" component={About} />
+        {/* <Route exact path="/invest" component={Invest} />
+        <Route exact path="/raiseFund" component={RaiseFund} /> */}
+        <Route exact path="/about" component={About} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/learnmore" component={learnmore} />
-        <Redirect to="/" component={Home} />
+        {/* <Redirect to="/" component={Home} /> */}  
       </Switch>
     </React.Fragment>
   );

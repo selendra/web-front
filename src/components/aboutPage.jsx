@@ -47,8 +47,8 @@ const About = () => {
           <div className="ui stackable two column grid">
             <div className="column">
               <div className="columnLeft">
-                <h2> Mission</h2>
-                <p>
+                <h1 className="h1-mission"> Mission</h1>
+                <p className="p-about-size">
                   Creation of a new class of low-risk tokens base on hight yield
                   and illiquid real assets
                 </p>
@@ -65,8 +65,8 @@ const About = () => {
             </div>
             <div className="column">
               <div className="columnRight">
-                <h2>Vision</h2>
-                <p>
+                <h1 className="h1-mission1">Vision</h1>
+                <p className="p-about-size">
                   Creation of a new class of low-risk tokens base on hight yield
                   and illiquid real assets
                 </p>
