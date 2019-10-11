@@ -33,26 +33,25 @@ export class navbar extends Component {
                 />
               </center>
             </Link>
-            <Link to="/invest" className="item">
+            {/* <Link to="/invest" className="item ling-navbar">
               Invest
             </Link>
             <Link to="/raiseFund" className="item">
               Raised Fund
-            </Link>
+            </Link> */}
             <Link to="/aboutPage" className="item">
               About
             </Link>
             <NavLink to="/blog" className="item">
               Blog
             </NavLink>
-            <Link to="/login" className="item">
-              Login
-            </Link>
-            <Link to="/signup" className="item">
+            <a href="https://app.zeetomic.com/login" className="item hoverlink">Login</a>
+            {/* <Link to="/signup" className="item">
               Signup
-            </Link>
+            </Link> */}
+            <a href="https://app.zeetomic.com/signup"><button className="ui  white inverted button sign-up-button">Sign Up</button></a>
+            </div>
           </div>
-        </div>
         <div className="navbar-menu">
           <div className="ui secondary  container menu mobile only mobile-menu">
             <div className="left menu">
@@ -92,7 +91,7 @@ export class navbar extends Component {
             </Link>
           </div>
           <div className="left menu menu-item">
-            <NavLink
+            {/* <NavLink
               to="/invest"
               className="item hoverlink"
               style={{ color: "#fff" }}
@@ -101,20 +100,21 @@ export class navbar extends Component {
             </NavLink>
             <NavLink to="/raiseFund" className="item hoverlink">
               Raise Fund
-            </NavLink>
-            <NavLink to="/aboutPage" className="item hoverlink">
+            </NavLink> */}
+            <NavLink to="/about" className="item hoverlink">
               About
             </NavLink>
             <NavLink to="/blog" className="item hoverlink">
               Blog
             </NavLink>
             <div className="right menu">
-              <NavLink to="/login" className="item hoverlink">
+              {/* <NavLink to="/login" className="item hoverlink">
                 Login
-              </NavLink>
-              <NavLink to="/signup" className="item hoverlink">
-                <button className="ui  white inverted button">Sign Up</button>
-              </NavLink>
+              </NavLink> */}
+              <a href="https://app.zeetomic.com/login" className="item hoverlink">Login</a>
+              
+                <a href="https://app.zeetomic.com/signup"><button className="ui  white inverted button sign-up-button">Sign Up</button></a>
+              
             </div>
           </div>
         </div>

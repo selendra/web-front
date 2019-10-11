@@ -46,6 +46,12 @@ h6 {
   left: 40px;
   top: -5vw;
 }
+.header-main h1{
+  font-size:4rem;
+}
+.header-main h2{
+  font-size:2rem;
+}
 .header-main-1,
 .header-main-2 {
   display: inline-block;
@@ -56,7 +62,7 @@ h6 {
 .header-main-1 {
   font-weight: 900;
   line-height: 1.2;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   margin-bottom: 2rem;
   letter-spacing: 2px;
 }
@@ -79,8 +85,9 @@ h6 {
 }
 
 .menu-item {
-  margin: 0 auto !important;
+  margin: 0 312px !important;
   margin-top: -4px !important;
+  font-size: 20px !important;
 }
 .open {
   position: fixed;
@@ -114,8 +121,9 @@ h6 {
   margin: 0 !important;
 }
 .menu-logo {
-  width: 22rem;
+  width: 29rem;
   padding-left: 1rem;
+  
 }
 .learn-more {
   color: #fff;
@@ -132,6 +140,7 @@ h6 {
 /* Recently Project */
 .ui.grey.header {
   color: black !important;
+  font-size: 3rem;
 }
 .recently-container {
   padding: 12vh 0 12vh 0;
@@ -148,6 +157,7 @@ h6 {
 }
 .hoverlink {
   color: #ffffff !important;
+  font-size: 20px !important;
 }
 .hoverlink:hover {
   color: #f1c40f !important;
@@ -176,7 +186,7 @@ h6 {
 .description-sub {
   line-height: 1.7;
   letter-spacing: 0.5px;
-  font-size: 20px;
+  font-size: 2.5rem !important;
   text-align: left;
 }
 /* slide show. */
@@ -319,6 +329,12 @@ h6 {
 .about-project div:last-child div:first-child {
   margin: auto 0 !important;
 }
+.h1-mission{
+  font-size: 3rem;
+}
+.h1-mission1{
+  font-size: 3rem;
+}
 /* footer */
 .footer-container {
   text-align: center;
@@ -410,10 +426,15 @@ h6 {
 
 .background-header {
   background-image: url("../image/zee-header-banner-2.jpg");
+  background-size: cover;
+  background-position: center center;
   min-height: 100vh;
-  background-size: left;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
-
+.p-about-size{
+  font-size: 24px;
+}
 hr {
   display: block;
   margin-top: 0.3em;
@@ -438,6 +459,12 @@ hr {
   font-size: 4.5rem;
   line-height: 4.3rem;
 }
+.ui.white.inverted.button.sign-up-button{
+  margin-left: 21px;
+  margin-top:8px;
+  font-size: 16px;
+  width: 141px;
+}
 
 .background-under-header {
   background-image: url("../image/network-nest.png");
@@ -454,7 +481,7 @@ hr {
   margin: 0px auto;
 }
 .about-column-style p {
-  font-size: 16px;
+  font-size: 22px;
 }
 .about-misson {
   line-height: 7rem;
@@ -547,13 +574,13 @@ hr {
 }
 
 .ui.center.aligned.header.h1-color-rais {
-  font-size: 4rem;
+  font-size: 5rem;
   color: deepskyblue;
   margin-top: 15rem;
 }
 
 .p-color-rais {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: white;
 }
 
@@ -583,7 +610,7 @@ hr {
 
 .ui.header.center.aligned.h1-apply {
   margin-top: 3rem;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #485460;
 }
 
@@ -591,11 +618,12 @@ hr {
   padding: 1rem;
   color: #2185d0;
   cursor: pointer;
+  font-size: 2.5rem;
   /* border-bottom: 1px solid darkgray; */
 }
 .p-style-accordion {
   margin-left: 10px;
-  font-size: 12px;
+  font-size: 21px !important;
   color: #485460;
 }
 .ui.text.aligned.container.padding-container-rasifund {
@@ -807,7 +835,7 @@ figure img {
   .description-style-header,
   .header-update,
   .description-style-header {
-    font-size: 20px !important;
+    font-size: 5rem !important;
   }
   .home-bg-image {
     height: 100vw;
@@ -852,7 +880,7 @@ figure img {
     font-size: 22px !important;
   }
   .header-main-1 {
-    font-size: 3rem !important;
+    font-size: 6rem !important;
     width: 100%;
   }
   .header-main-2 {

@@ -106,11 +106,11 @@ class home extends Component {
                 <h1 className="header-main-1">
                 The Platform for the Issuance and Management of Digital Asset
                 </h1>
-                <h1 className="header-main-2">
+                <h2 className="header-main-2">
                   The generation of highly scalable, autonomous-incentivized
                   platform base on decentralized network infrastructure that
                   empower the community economic.
-                </h1>
+                </h2>
                 <br/>
                 <Link to="/learnmore " className="learn-more">
                 <span className="learn-more-word">Learn More</span>
