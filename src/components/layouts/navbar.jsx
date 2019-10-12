@@ -24,7 +24,7 @@ export class navbar extends Component {
             }
             style={{}}
           >
-            <Link to="/home" className="item">
+            <Link to="/" className="item">
               <center>
                 <img
                   className="ui tiny image"
@@ -39,7 +39,7 @@ export class navbar extends Component {
             <Link to="/raiseFund" className="item">
               Raised Fund
             </Link> */}
-            <Link to="/aboutPage" className="item">
+            <Link to="/about" className="item">
               About
             </Link>
             <NavLink to="/blog" className="item">
@@ -86,7 +86,7 @@ export class navbar extends Component {
               <img
                 className="menu-logo"
                 src="image/zeetomic-logo-header.png"
-                alt="zeetomic"
+                alt="zeetomic"CompLibrary
               />
             </Link>
           </div>
