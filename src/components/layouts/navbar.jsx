@@ -55,7 +55,7 @@ export class navbar extends Component {
         <div className="navbar-menu">
           <div className="ui secondary  container menu mobile only mobile-menu">
             <div className="left menu">
-              <Link to="/home">
+              <Link to="/">
                 <img
                   className="menu-logo"
                   src="./image/zeetomic-logo-header.png"
