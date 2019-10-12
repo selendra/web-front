@@ -6,6 +6,8 @@ import RaiseFund from "./components/raiseFund";
 import About from "./components/aboutPage";
 import Blog from "./components/blog";
 import learnmore from "./components/learnmore";
+import sucessful from "./components/sucessful";
+import field from "./components/field";
 function App() {
   return (
     <React.Fragment>
@@ -16,6 +18,8 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/learnmore" component={learnmore} />
+        <Route exact path="/successfullyverified" component={sucessful}/>
+        <Route exact path="/failedverification" component={field}/>
         {/* <Redirect to="/" component={Home} /> */}  
       </Switch>
     </React.Fragment>
