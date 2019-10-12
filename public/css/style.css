@@ -465,6 +465,36 @@ hr {
   font-size: 16px;
   width: 141px;
 }
+.background-secessful{
+  background-color: #012639;
+  /* padding: 105px; */
+  height: 83rem;
+}
+.sucessful-card{
+  width: 50rem !important;
+  top:19%;
+  /* margin-top:50px !important; */
+  /* margin: 50% auto !important; */
+  /* padding: 25px !important; */
+}
+.image-sucessful{
+  margin-top: 34px;
+}
+.header-sucessful p{
+  padding: 7px;
+}
+.sucessful-button{
+  color:black !important;
+  width: 39rem;
+  padding: 14px !important;
+  font-size: 14px !important;
+}
+.header-sucessful h1{
+  font-size: 23px !important;
+}
+.header-sucessful{
+  padding: 35px !important;
+}
 .ui.massive.black.button.get-apk{
   border-radius: 8px !important;
   border:2px solid silver;
@@ -739,6 +769,16 @@ figure img {
       font-size: 10px;
       background-color: black;
     }
+    .sucessful-button{
+    margin-right: 200px;
+    }
+    .background-secessful{
+      height: 150rem;
+    }
+   .sucessful-card{
+      width: 50rem !important;
+      top:1%;
+   }
     .android-icon{
       color:#7CFC00;
       width:20px;
