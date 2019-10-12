@@ -114,7 +114,7 @@ class home extends Component {
                 <span className="learn-more-word">Learn More</span>
                 <span className="arrow-home">&#10093;</span>
               </Link> */}
-              <a href="https://github.com/zeetomic/mobile/releases/download/0.1.test/zee_test_v0_1.apk"><button className="ui massive black button get-apk"> <i class="android icon android-icon"></i>Get Android APK</button></a>
+              <a href="https://github.com/zeetomic/mobile/releases/download/0.2.test/zee_test_v0_2.apk"><button className="ui massive black button get-apk"> <i class="android icon android-icon"></i>Get Android APK</button></a>
               </div>
               
             </div>
