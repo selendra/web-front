@@ -6,7 +6,7 @@ class successfullyverified extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                {/* <div className="ui container"> */}
+                {/* <div className="ui container"> hi check*/}
             <div className="background-secessful">
             <Navbar/>
             <div className="ui centered card sucessful-card">
