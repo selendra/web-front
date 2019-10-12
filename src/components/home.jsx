@@ -110,10 +110,11 @@ class home extends Component {
                 We provide trusted global solutions for creating a digital asset. Customer Loyalty | Real Estate | Vested Shares | Payment Solution
                 </h2>
                 <br/>
-                <Link to="/learnmore " className="learn-more">
+                {/* <Link to="/learnmore " className="learn-more">
                 <span className="learn-more-word">Learn More</span>
                 <span className="arrow-home">&#10093;</span>
-              </Link>
+              </Link> */}
+              <a href="https://github.com/zeetomic/mobile/releases/download/0.1.test/zee_test_v0_1.apk"><button className="ui massive black button get-apk"> <i class="android icon android-icon"></i>Get Android APK</button></a>
               </div>
               
             </div>

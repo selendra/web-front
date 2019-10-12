@@ -465,7 +465,18 @@ hr {
   font-size: 16px;
   width: 141px;
 }
-
+.ui.massive.black.button.get-apk{
+  border-radius: 8px !important;
+  border:2px solid silver;
+  color:white;
+  font-size: 20px;
+  background-color: black;
+}
+.android-icon{
+  color:#7CFC00;
+  width:20px;
+  font-size: 26px !important;
+}
 .background-under-header {
   background-image: url("../image/network-nest.png");
   /* background-size: 100% 100%, contain; */
@@ -719,6 +730,20 @@ figure img {
 @media screen and (max-width: 1080px) {
   html {
     font-size: 50%;
+  }
+  @media screen and (max-width:767px) {
+    .ui.massive.black.button.get-apk{
+      border-radius: 8px !important;
+      border:2px solid silver;
+      color:white;
+      font-size: 10px;
+      background-color: black;
+    }
+    .android-icon{
+      color:#7CFC00;
+      width:20px;
+      font-size: 15px !important;
+    }
   }
   .footer-text {
     font-size: 16px;
