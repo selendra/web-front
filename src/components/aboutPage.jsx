@@ -14,28 +14,14 @@ const About = () => {
             </div>
             <div className="twelve wide column about-column-style">
               <p className="color-about-p">
-                Zeetomic is a blockchain-based real economy with new exciting
-                opportunities for individual investors, SMEs, and large
-                institutions
+              Zeetomic is a new generation of trusted global solutions for creating a digital asset.  Customer Loyalty, Real Estate, Vested Shares and Payment Solution based on blockchain.
               </p>
               <hr size="2" />
               <p className="color-about-p">
-                The platform is designed to bring togetther aset managers/owners
-                and investors by creating low-risk blockchain-based securities
-                backed by assets in real estate, agriculture, the manaufactruing
-                sector, logistics, private equity, and others. Wehvae built
-                risk-free infrastructure founded upon a legal framework
-                explicitly established for security token offerings on
-                Smartlands to maximize the safety and security of investing on
-                the Platform.
+              The platform is designed to bring collectively a set of logistics, private equity, food, and hospitality transaction more efficiency. We have built a risk-free infrastructure established for security/utility token offerings on Zeetomic to maximize the safety and security of transactions on the Platform.
               </p>
               <p className="color-about-p">
-                Smarlands Platform is built on the Stellar network and employs
-                advanced blockchain technology with such extended capabilities
-                as fast transactions processing at low cost, enhanced securit of
-                all processes-from issuance to storage to transfers of tokens
-                for tranding on the secondary market others. on the secondary
-                market otheres.
+              Zeetomic Platform currently built on top of the Stellar network and engages with advanced blockchain technology to extended capabilities as fast transaction processing at low cost, enhanced the security of all processes-from issuance to storage to transfers of tokens for swap, trading on the market.
               </p>
             </div>
           </div>
@@ -49,8 +35,7 @@ const About = () => {
               <div className="columnLeft">
                 <h1 className="h1-mission"> Mission</h1>
                 <p className="p-about-size">
-                  Creation of a new class of low-risk tokens base on hight yield
-                  and illiquid real assets
+                Fast, simple and cost reduction for security/utility token issuing platform.
                 </p>
               </div>
             </div>
@@ -67,8 +52,7 @@ const About = () => {
               <div className="columnRight">
                 <h1 className="h1-mission1">Vision</h1>
                 <p className="p-about-size">
-                  Creation of a new class of low-risk tokens base on hight yield
-                  and illiquid real assets
+                Zeetomic is a bridge of blockchain with a single and simple endpoint integration that empowers all classes of the business ecosystem. 
                 </p>
               </div>
             </div>

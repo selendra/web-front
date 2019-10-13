@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "./layouts/navbar";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Slideview from "./slideshow";
 import Footer from "./layouts/footer";
 
@@ -51,7 +51,7 @@ class home extends Component {
       {
         _id: 1000,
         image: "./image/vitamin-air.png",
-        header: "Customer Loyalty Program",
+        header: "Blockchain as a Customer Loyalty solution",
         descr:
           "Customer loyalty programs allow companies to reward customers who make purchases frequently or on a specified period."
       },

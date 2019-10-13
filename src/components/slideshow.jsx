@@ -7,33 +7,33 @@ export class slideshow extends Component {
         _id: 1001,
         number: 1,
         image: "./image/step-1.png",
-        header: "How it works",
+        header: "How does it work?",
         descr:
-          "the agreement between the owner of property with Zeeva's curator"
+          "Your customer identifies themselves vai require documents. "
       },
       {
         _id: 1002,
         number: 2,
         image: "./image/step-1.png",
-        header: "How it works",
+        header: "Integrate with existing POS",
         descr:
-          "the agreement between the owner of property with Zeeva's curator"
+          "Your customer pays into items through your existing POS."
       },
       {
         _id: 1003,
         number: 3,
         image: "./image/step-1.png",
-        header: "How it works",
+        header: "Reward Customer autonomously",
         descr:
-          "the agreement between the owner of property with Zeeva's curator"
+          "Your customer received the reward automatically into their account."
       },
       {
         _id: 1004,
         number: 4,
         image: "./image/step-1.png",
-        header: "How it works",
+        header: "Exchange",
         descr:
-          "the agreement between the owner of property with Zeeva's curator"
+          "From the trading account, token are exchangeable with trusted parties."
       }
     ]
   };

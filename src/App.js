@@ -1,8 +1,10 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, 
+  // Redirect 
+} from "react-router-dom";
 import Home from "./components/home";
-import Invest from "./components/invest";
-import RaiseFund from "./components/raiseFund";
+// import Invest from "./components/invest";
+// import RaiseFund from "./components/raiseFund";
 import About from "./components/aboutPage";
 import Blog from "./components/blog";
 import learnmore from "./components/learnmore";
