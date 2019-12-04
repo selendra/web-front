@@ -50,21 +50,21 @@ class home extends Component {
     recently_data: [
       {
         _id: 1000,
-        image: "./image/vitamin-air.png",
+        image: "./image/1.svg",
         header: "Customer Loyalty Program",
         descr:
           "Customer loyalty programs allow companies to reward customers who make purchases frequently or on a specified period."
       },
       {
         _id: 1001,
-        image: "./image/vitamin-air-v.png",
+        image: "./image/3.svg",
         header: "Crowdfunding And Vested",
         descr:
           "Our Platform enables any startup to create an asset and accept crowdfunding secured by the Zeetomic custodian account."
       },
       {
         _id: 1002,
-        image: "./image/crypto.png",
+        image: "./image/2.svg",
         header: "API for Payment Solutions",
         descr:
           "With our robust API developers can access payment ecosystems for a more dynamic transition of value."
@@ -133,7 +133,7 @@ class home extends Component {
           </div>
         </div>
         <Slideview />
-        <div className="recently-container">
+        {/* <div className="recently-container">
           <div className="recently-header">
             <div className="ui centered  header">Recently Updates</div>
           </div>
@@ -142,7 +142,7 @@ class home extends Component {
               cards(value._id, value.image, value.header, value.descr)
             )}
           </div>
-        </div>
+        </div> */}
         <Footer />
       </React.Fragment>
     );

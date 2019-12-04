@@ -33,6 +33,9 @@ h6 {
   background-repeat: no-repeat;
   height: 50vw;
 }
+/* .header{
+  margin-top:-6vh !important;
+} */
 
 .header-text-box {
   position: relative;
@@ -43,7 +46,7 @@ h6 {
 
 .header-main{
   position: relative;
-  left: 40px;
+  left: 40px; 
   top: -5vw;
 }
 .header-main h1{
@@ -148,7 +151,8 @@ h6 {
   background-color: #fff;
 }
 .recently-header {
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
+  margin-bottom: 4vh;
   font-size: 3rem;
 }
 .recently-header div {
@@ -341,6 +345,8 @@ h6 {
   background: #ece7e7;
   width: 100%;
   padding: 10vh 0;
+  border-top: 4px solid #cdd0c9;
+  margin-top:-15px;
 }
 .footer-logo img {
   width: 22rem;
